@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Coach Divyesh THADESHWAR | Wellness, Nutrition & Lifestyle Coach</title>
 <meta name="description" content="Coach Divyesh THADESHWAR — With over 4 years of experience, guiding thousands of families toward sustainable weight management, healthy nutrition, and lifelong wellness habits.">
-<meta name="keywords" content="Coach Divyesh THADESHWAR, Divyesh Thadeshwar, Wellness Coach, Weight Loss Coach, Healthy Nutrition, DP Vitazen, BMI Calculator, Lifestyle Coach">
+<meta name="keywords" content="Coach Divyesh THADESHWAR, Divyesh Thadeshwar, Wellness Coach, Weight Loss Coach, Weight Gain Coach, DP Vitazen, BMI Calculator, Lifestyle Coach">
 
 <!-- OpenGraph / Social Meta -->
 <meta property="og:title" content="Coach Divyesh THADESHWAR | Wellness, Nutrition & Lifestyle Coach">
@@ -23,7 +23,7 @@
    ========================================================================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --forest-950: #081612;
+  --forest-950: #071511;
   --forest-900: #0C211B;
   --forest-800: #13332A;
   --forest-700: #1B4539;
@@ -48,7 +48,7 @@
   --shadow-sm: 0 4px 14px rgba(12, 33, 27, 0.05);
   --shadow-md: 0 10px 30px rgba(12, 33, 27, 0.09);
   --shadow-lg: 0 20px 50px rgba(12, 33, 27, 0.16);
-  --shadow-glow: 0 0 35px rgba(223, 162, 57, 0.22);
+  --shadow-glow: 0 0 35px rgba(223, 162, 57, 0.25);
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
@@ -84,10 +84,74 @@ section { padding: 5.5rem 0; position: relative; }
 @media (max-width: 768px) { section { padding: 3.8rem 0; } }
 
 /* ==========================================================================
+   PHOTO ANIMATIONS & SHINE EFFECTS
+   ========================================================================== */
+.anim-img-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease;
+}
+.anim-img-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(12, 33, 27, 0.18);
+}
+.anim-img-card img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.45s ease;
+}
+.anim-img-card:hover img {
+  transform: scale(1.045);
+}
+
+/* Subtle Shimmer Overlay on hover */
+.anim-img-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: none;
+}
+.anim-img-card:hover::after {
+  opacity: 1;
+  left: 140%;
+  transition: all 0.85s ease-in-out;
+}
+
+/* Floating animation */
+@keyframes floatGentle {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-7px); }
+  100% { transform: translateY(0px); }
+}
+.float-anim {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Glow Pulse Animation */
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 15px rgba(223, 162, 57, 0.2); }
+  50% { box-shadow: 0 0 35px rgba(223, 162, 57, 0.45); }
+  100% { box-shadow: 0 0 15px rgba(223, 162, 57, 0.2); }
+}
+.pulse-glow {
+  animation: glowPulse 4s infinite ease-in-out;
+}
+
+/* ==========================================================================
    TOP ANNOUNCEMENT BAR
    ========================================================================== */
 .top-ticker {
-  background: linear-gradient(90deg, #091713, var(--forest-800), #091713);
+  background: linear-gradient(90deg, #06120E, var(--forest-800), #06120E);
   color: #FFFFFF;
   padding: 8px 1rem;
   font-size: 0.78rem;
@@ -501,10 +565,10 @@ nav#siteNav.scrolled {
   height: 100%;
   object-fit: cover;
   object-position: center 18%;
-  transition: transform 0.6s ease;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .hero-portrait-frame:hover .hero-portrait-img-box img {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .hero-badge-float {
@@ -550,7 +614,7 @@ nav#siteNav.scrolled {
 }
 
 /* ==========================================================================
-   FEATURED MANIFESTO / ABOUT COACH DIVYESH (USER EXACT TEXT)
+   FEATURED MANIFESTO / ABOUT COACH DIVYESH (EXACT USER MANIFESTO)
    ========================================================================== */
 #about-coach {
   background: #FFFFFF;
@@ -654,10 +718,7 @@ nav#siteNav.scrolled {
   align-items: flex-start;
   gap: 0.85rem;
 }
-.mini-pillar-icon {
-  font-size: 1.4rem;
-  flex-shrink: 0;
-}
+.mini-pillar-icon { font-size: 1.4rem; flex-shrink: 0; }
 .mini-pillar-info h4 {
   font-size: 0.95rem;
   color: var(--forest-950);
@@ -731,22 +792,22 @@ nav#siteNav.scrolled {
   aspect-ratio: 4/5;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
   background: var(--forest-950);
 }
 .coach-action-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(12, 33, 27, 0.2);
 }
 .coach-action-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
-  transition: transform 0.5s ease;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .coach-action-card:hover img {
-  transform: scale(1.04);
+  transform: scale(1.06);
 }
 .coach-action-caption {
   position: absolute;
@@ -754,7 +815,7 @@ nav#siteNav.scrolled {
   left: 0;
   right: 0;
   padding: 14px 18px;
-  background: linear-gradient(to top, rgba(8,22,18,0.92) 0%, rgba(8,22,18,0.3) 70%, transparent 100%);
+  background: linear-gradient(to top, rgba(7,21,17,0.94) 0%, rgba(7,21,17,0.3) 70%, transparent 100%);
   color: #FFFFFF;
 }
 .coach-action-caption span {
@@ -844,16 +905,16 @@ nav#siteNav.scrolled {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .review-card:hover .review-thumb-box img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .review-overlay-hint {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(8,22,18,0.85) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(7,21,17,0.85) 0%, transparent 60%);
   display: flex;
   align-items: flex-end;
   padding: 1rem;
@@ -998,7 +1059,7 @@ nav#siteNav.scrolled {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(8,22,18,0.7);
+  background: rgba(7,21,17,0.7);
   border: 1px solid rgba(255,255,255,0.25);
   color: #FFFFFF;
   width: 44px;
@@ -1455,7 +1516,7 @@ nav#siteNav.scrolled {
    FOOTER
    ========================================================================== */
 footer {
-  background: #050E0B;
+  background: #040C09;
   color: rgba(255, 255, 255, 0.65);
   padding: 4.5rem 0 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1551,6 +1612,341 @@ footer {
   }
 }
 
+/* ==========================================================================
+   FLOATING SLIDE RE-OPEN BUTTON (FOR ASSESSMENT POP-UP)
+   ========================================================================== */
+.popup-slide-btn {
+  position: fixed;
+  left: 0;
+  top: 48%;
+  transform: translateY(-50%) translateX(0);
+  background: linear-gradient(135deg, var(--forest-900), var(--forest-700));
+  color: var(--gold);
+  border: 1px solid rgba(223, 162, 57, 0.4);
+  border-left: none;
+  padding: 12px 18px 12px 14px;
+  border-radius: 0 50px 50px 0;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 240;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: 0.02em;
+}
+.popup-slide-btn:hover {
+  background: var(--gold);
+  color: var(--forest-950);
+  padding-left: 20px;
+  box-shadow: 0 12px 30px rgba(223, 162, 57, 0.45);
+}
+@media (max-width: 600px) {
+  .popup-slide-btn {
+    top: auto;
+    bottom: 90px;
+    left: 14px;
+    border-radius: 50px;
+    border-left: 1px solid rgba(223, 162, 57, 0.4);
+    padding: 8px 14px;
+    font-size: 0.76rem;
+  }
+}
+
+/* ==========================================================================
+   POP-UP MODAL (WEIGHT LOSS & WEIGHT GAIN ASSESSMENT)
+   ========================================================================== */
+.assessment-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 12, 10, 0.88);
+  backdrop-filter: blur(12px);
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.assessment-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-glass-card {
+  position: relative;
+  max-width: 580px;
+  width: 100%;
+  max-height: 92vh;
+  overflow-y: auto;
+  background: linear-gradient(145deg, #0F2620 0%, #071511 100%);
+  border: 1px solid rgba(223, 162, 57, 0.35);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6), 0 0 40px rgba(223, 162, 57, 0.2);
+  color: #FFFFFF;
+  padding: 2.5rem 2.2rem;
+  transform: translateY(30px) scale(0.96);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.assessment-modal.active .modal-glass-card {
+  transform: translateY(0) scale(1);
+}
+@media (max-width: 550px) {
+  .modal-glass-card { padding: 1.8rem 1.4rem; border-radius: var(--radius-lg); }
+}
+
+.modal-close-cross {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+.modal-close-cross:hover {
+  background: var(--clay);
+  border-color: var(--clay);
+  transform: rotate(90deg);
+}
+
+.modal-top-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(223, 162, 57, 0.18);
+  border: 1px solid rgba(223, 162, 57, 0.45);
+  color: var(--gold);
+  padding: 4px 14px;
+  border-radius: 30px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.modal-headline {
+  font-family: var(--ff-serif);
+  font-size: clamp(1.5rem, 3.2vw, 1.95rem);
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
+.modal-headline em {
+  font-style: italic;
+  color: var(--gold);
+}
+.modal-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+/* Cool Animated Slide Segmented Toggle */
+.slide-toggle-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  padding: 5px;
+  margin-bottom: 1.6rem;
+}
+.slide-toggle-bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(50% - 5px);
+  height: calc(100% - 10px);
+  background: linear-gradient(135deg, var(--gold), #CA8E26);
+  border-radius: 40px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(223, 162, 57, 0.4);
+}
+.slide-toggle-container.gain .slide-toggle-bg {
+  transform: translateX(100%);
+}
+.slide-toggle-btn {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 11px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.slide-toggle-btn.active {
+  color: var(--forest-950);
+}
+
+/* Target Slider Box */
+.target-slider-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 1.4rem;
+}
+.target-slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.target-slider-header span.title {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.target-slider-header span.val-badge {
+  font-family: var(--ff-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold);
+  background: rgba(223, 162, 57, 0.15);
+  padding: 3px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(223, 162, 57, 0.3);
+}
+
+.range-slider-input {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.18);
+  outline: none;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.range-slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(223, 162, 57, 0.7);
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.range-slider-input::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+}
+.slider-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Modal Form Fields */
+.modal-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .modal-fields-grid { grid-template-columns: 1fr; }
+}
+.modal-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.modal-input-wrap label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+.modal-input-wrap input,
+.modal-input-wrap select {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  color: #FFFFFF;
+  font-size: 0.94rem;
+  transition: all 0.2s ease;
+}
+.modal-input-wrap input:focus,
+.modal-input-wrap select:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 0 3px rgba(223, 162, 57, 0.2);
+}
+.modal-input-wrap input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-submit-btn {
+  width: 100%;
+  margin-top: 1.2rem;
+  background: linear-gradient(135deg, #25D366 0%, #17A34A 100%);
+  color: #042E13;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 15px 24px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+  transition: all 0.25s ease;
+}
+.modal-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(37, 211, 102, 0.55);
+  background: linear-gradient(135deg, #2CE26E 0%, #19B352 100%);
+}
+.modal-submit-btn span.arrow-slide {
+  transition: transform 0.2s ease;
+}
+.modal-submit-btn:hover span.arrow-slide {
+  transform: translateX(4px);
+}
+
+.modal-trust-footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 /* Scroll Animation classes */
 .fade-up {
   opacity: 0;
@@ -1594,7 +1990,9 @@ footer {
   </ul>
 
   <div class="nav-actions">
-    <a href="#contact" class="nav-cta desktop-only">Book Free Consultation</a>
+    <button class="nav-cta desktop-only" onclick="openAssessmentModal()" style="border:none;cursor:pointer;">
+      🎯 Free Diet Plan
+    </button>
     <button class="nav-ham" id="menuToggle" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
     </button>
@@ -1611,7 +2009,9 @@ footer {
   <a href="#services" onclick="closeMenu()">Programs &amp; Specialities</a>
   <a href="#tools" onclick="closeMenu()">Free Health Tools</a>
   <a href="#faq" onclick="closeMenu()">FAQ</a>
-  <a href="#contact" onclick="closeMenu()" class="btn btn-primary" style="margin-top:1rem;color:#fff!important;">Book Free Consultation</a>
+  <button onclick="closeMenu(); openAssessmentModal();" class="btn btn-primary" style="margin-top:1rem;color:#fff!important;border:none;">
+    🎯 Free Diet &amp; Weight Plan
+  </button>
 </div>
 
 <!-- ==========================================================================
@@ -1631,7 +2031,9 @@ footer {
       </p>
 
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Book Free Consultation</a>
+        <button class="btn btn-primary" onclick="openAssessmentModal()">
+          🎯 Free Assessment Plan
+        </button>
         <a href="#reviews" class="btn btn-ghost-light">Explore 100+ Client Results</a>
         <a href="#tools" class="btn btn-gold">Free Health Calculators</a>
       </div>
@@ -1652,9 +2054,9 @@ footer {
       </div>
     </div>
 
-    <!-- Coach Portrait -->
+    <!-- Coach Portrait with Photo Animation -->
     <div class="hero-portrait-wrap">
-      <div class="hero-portrait-frame">
+      <div class="hero-portrait-frame anim-img-card pulse-glow">
         <div class="hero-portrait-img-box">
           <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.38%20PM.jpeg" alt="Coach Divyesh THADESHWAR" width="420" height="560">
         </div>
@@ -1688,7 +2090,7 @@ footer {
     <div class="coach-manifesto-card fade-up">
       <div class="coach-manifesto-grid">
         <div class="coach-profile-visual">
-          <div class="coach-visual-card">
+          <div class="coach-visual-card anim-img-card">
             <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.12.24%20PM.jpeg" alt="Coach Divyesh THADESHWAR smiling portrait" loading="lazy">
           </div>
           <div class="coach-tag-pill">Coach Profile</div>
@@ -1751,7 +2153,9 @@ footer {
           </div>
 
           <div style="display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;margin-top:1.5rem;">
-            <a href="#contact" class="btn btn-primary">Start With Coach Divyesh</a>
+            <button class="btn btn-primary" onclick="openAssessmentModal()">
+              Start With Coach Divyesh
+            </button>
             <a href="https://wa.me/918347402486?text=Hello%20Coach%20Divyesh%2C%20I%20would%20like%20to%20discuss%20a%20personalized%20wellness%20plan%20for%20myself%20and%20my%20family." target="_blank" rel="noopener" class="btn btn-wa">
               Chat Directly on WhatsApp
             </a>
@@ -1759,7 +2163,7 @@ footer {
         </div>
       </div>
 
-      <!-- Coach Moments / Seminars Visual Reel -->
+      <!-- Coach Moments / Seminars Visual Reel with Photo Animations -->
       <div class="coach-action-strip fade-up">
         <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.6rem;">
           <div>
@@ -1770,15 +2174,15 @@ footer {
         </div>
 
         <div class="coach-action-grid">
-          <div class="coach-action-card">
+          <div class="coach-action-card anim-img-card">
             <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.12.25%20PM.jpeg" alt="Coach Divyesh at Wellness Conference" loading="lazy">
             <div class="coach-action-caption"><span>Wellness Leadership</span></div>
           </div>
-          <div class="coach-action-card">
+          <div class="coach-action-card anim-img-card">
             <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.39%20PM.jpeg" alt="Coach Divyesh Lifestyle Coaching" loading="lazy">
             <div class="coach-action-caption"><span>Lifestyle Mentorship</span></div>
           </div>
-          <div class="coach-action-card">
+          <div class="coach-action-card anim-img-card">
             <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.39%20PM%20(2).jpeg" alt="Coach Divyesh Consultations" loading="lazy">
             <div class="coach-action-caption"><span>Client Consultations</span></div>
           </div>
@@ -1794,7 +2198,7 @@ footer {
 <section id="story">
   <div class="container">
     <div class="story-wrapper fade-up">
-      <div class="story-image-box">
+      <div class="story-image-box anim-img-card">
         <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%201.40.18%20PM.jpeg" alt="Coach Divyesh Personal Transformation Story" loading="lazy">
       </div>
 
@@ -1813,9 +2217,9 @@ footer {
 
         <div style="display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;margin-top:2rem;">
           <a href="#reviews" class="btn btn-outline-dark">See Client Transformations</a>
-          <a href="https://wa.me/918347402486?text=Hi%20Coach%20Divyesh%2C%20I%20saw%20your%20personal%20transformation%20story%20and%20want%20to%20start%20my%20own%20journey." target="_blank" rel="noopener" class="btn btn-wa">
-            Ask Divyesh on WhatsApp
-          </a>
+          <button class="btn btn-wa" onclick="openAssessmentModal()">
+            Start Your Transformation
+          </button>
         </div>
       </div>
     </div>
@@ -1846,7 +2250,7 @@ footer {
 
     <!-- Transformations Grid -->
     <div class="transformations-grid" id="transformationsContainer">
-      <!-- Populated via JavaScript from rev/ files -->
+      <!-- Populated via JavaScript from rev/ files with anim-img-card animations -->
     </div>
 
     <!-- Bottom Banner -->
@@ -1855,9 +2259,9 @@ footer {
         <h3 style="font-family:var(--ff-serif);font-size:1.6rem;color:#FFFFFF;margin-bottom:0.3rem;">Ready to build your own success story?</h3>
         <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;">Join thousands of families living healthier, happier, and more energetic lives.</p>
       </div>
-      <a href="https://wa.me/918347402486?text=Hello%20Coach%20Divyesh%2C%20I%20saw%20the%20client%20reviews%20on%20your%20website.%20I%20would%20like%20to%20discuss%20my%20own%20wellness%20plan." target="_blank" rel="noopener" class="btn btn-wa">
+      <button class="btn btn-wa" onclick="openAssessmentModal()">
         Start Your Journey Today
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -2389,12 +2793,104 @@ footer {
 </footer>
 
 <!-- ==========================================================================
-     FLOATING WHATSAPP BUTTON
+     FLOATING QUICK-CHAT ACTION
      ========================================================================== -->
 <a href="https://wa.me/918347402486?text=Hi%20Coach%20Divyesh%2C%20I%20am%20visiting%20your%20website%20and%20would%20like%20to%20learn%20more%20about%20your%20wellness%20coaching." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat directly with Coach Divyesh on WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.36 5.13L2 22l5.11-1.44a9.9 9.9 0 0 0 4.93 1.31h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm4.48 11.92c-.24-.12-1.45-.71-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21a7.3 7.3 0 0 1-1.35-1.68c-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.11-.22-.17-.46-.29z"/></svg>
   <span>Chat with Coach</span>
 </a>
+
+<!-- ==========================================================================
+     FLOATING SLIDE RE-OPEN BUTTON
+     ========================================================================== -->
+<button class="popup-slide-btn" onclick="openAssessmentModal()" aria-label="Open Assessment Plan Form">
+  <span>🎯</span>
+  <span>Free Diet Plan</span>
+</button>
+
+<!-- ==========================================================================
+     ASSESSMENT POP-UP MODAL (WEIGHT LOSS & WEIGHT GAIN)
+     ========================================================================== -->
+<div class="assessment-modal" id="assessmentModal" role="dialog" aria-modal="true" aria-label="Transformation Assessment Form">
+  <div class="modal-glass-card">
+    <button class="modal-close-cross" onclick="closeAssessmentModal()" aria-label="Close form">&times;</button>
+
+    <div class="modal-top-badge">
+      ⚡ 1:1 Transformation Assessment
+    </div>
+    <h2 class="modal-headline">
+      Start Your <em>Personalized Roadmap</em>
+    </h2>
+    <p class="modal-subtitle">
+      Select your primary goal, target numbers, and receive a customized diet &amp; habit plan directly from Coach Divyesh on WhatsApp.
+    </p>
+
+    <!-- Animated Slide Toggle Button -->
+    <div class="slide-toggle-container" id="goalToggleContainer">
+      <div class="slide-toggle-bg"></div>
+      <button type="button" class="slide-toggle-btn active" id="btnGoalLoss" onclick="setPopGoal('Weight Loss')">
+        🔥 Weight Loss
+      </button>
+      <button type="button" class="slide-toggle-btn" id="btnGoalGain" onclick="setPopGoal('Weight Gain')">
+        💪 Weight Gain
+      </button>
+    </div>
+
+    <!-- Interactive Target Slider -->
+    <div class="target-slider-card">
+      <div class="target-slider-header">
+        <span class="title" id="sliderLabelText">Target To Lose:</span>
+        <span class="val-badge" id="sliderValDisplay">8 kg</span>
+      </div>
+      <input type="range" class="range-slider-input" id="popWeightRange" min="2" max="30" value="8" step="1" oninput="updateTargetSlider(this.value)">
+      <div class="slider-ticks">
+        <span>2 kg</span>
+        <span>10 kg</span>
+        <span>20 kg</span>
+        <span>30+ kg</span>
+      </div>
+    </div>
+
+    <!-- Form Inputs -->
+    <form id="popupAssessmentForm">
+      <div class="modal-fields-grid">
+        <div class="modal-input-wrap">
+          <label for="pop-name">Your Full Name *</label>
+          <input type="text" id="pop-name" required placeholder="e.g. Amit Patel">
+        </div>
+        <div class="modal-input-wrap">
+          <label for="pop-phone">WhatsApp Number *</label>
+          <input type="tel" id="pop-phone" required placeholder="10-digit mobile number">
+        </div>
+      </div>
+
+      <div class="modal-fields-grid">
+        <div class="modal-input-wrap">
+          <label for="pop-current-wt">Current Weight (kg) *</label>
+          <input type="number" id="pop-current-wt" required placeholder="e.g. 78" min="20" max="250">
+        </div>
+        <div class="modal-input-wrap">
+          <label for="pop-age">Age (years) *</label>
+          <input type="number" id="pop-age" required placeholder="e.g. 30" min="12" max="95">
+        </div>
+      </div>
+
+      <div class="modal-input-wrap">
+        <label for="pop-city">City / Location</label>
+        <input type="text" id="pop-city" placeholder="e.g. Ahmedabad, Mumbai, Dubai, London">
+      </div>
+
+      <button type="submit" class="modal-submit-btn">
+        <span>Get Custom Plan on WhatsApp</span>
+        <span class="arrow-slide">&rarr;</span>
+      </button>
+
+      <div class="modal-trust-footer">
+        <span>🔒 100% Free Consultation • Instant WhatsApp response from Coach Divyesh</span>
+      </div>
+    </form>
+  </div>
+</div>
 
 <!-- ==========================================================================
      CLIENT SCRIPTS & INTERACTIVITY
@@ -2546,7 +3042,7 @@ let currentFilter = 'all';
 let currentActiveIndex = 0;
 let displayedList = [...REVIEWS_DATA];
 
-// Render Review Cards
+// Render Review Cards with Animated Image Class
 function renderReviewsGrid(filter = 'all') {
   currentFilter = filter;
   const container = document.getElementById('transformationsContainer');
@@ -2558,7 +3054,7 @@ function renderReviewsGrid(filter = 'all') {
 
   displayedList.forEach((item, index) => {
     const card = document.createElement('div');
-    card.className = 'review-card fade-up in-view';
+    card.className = 'review-card fade-up in-view anim-img-card';
     const encodedFile = encodeURIComponent(item.file);
 
     card.innerHTML = `
@@ -2633,8 +3129,6 @@ document.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight') navigateLightbox(1);
   }
 });
-
-// Close lightbox on backdrop click
 document.getElementById('reviewLightbox').addEventListener('click', e => {
   if (e.target.id === 'reviewLightbox') closeLightbox();
 });
@@ -2643,7 +3137,6 @@ document.getElementById('reviewLightbox').addEventListener('click', e => {
 window.addEventListener('scroll', () => {
   document.getElementById('siteNav').classList.toggle('scrolled', window.scrollY > 40);
 });
-
 document.getElementById('menuToggle').addEventListener('click', () => {
   document.getElementById('mobileMenu').classList.toggle('open');
 });
@@ -2674,6 +3167,112 @@ const round1 = n => Math.round(n * 10) / 10;
 function openCoachWA(message) {
   window.open(`https://wa.me/${COACH_WA}?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
 }
+
+/* ==========================================================================
+   POP-UP MODAL LOGIC (4 SECONDS DELAY + SLIDE TOGGLE)
+   ========================================================================== */
+let selectedGoal = 'Weight Loss';
+let modalAlreadyOpened = false;
+
+function openAssessmentModal() {
+  const modal = document.getElementById('assessmentModal');
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeAssessmentModal() {
+  const modal = document.getElementById('assessmentModal');
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close popup on backdrop click
+document.getElementById('assessmentModal').addEventListener('click', e => {
+  if (e.target.id === 'assessmentModal') closeAssessmentModal();
+});
+
+// Auto-trigger popup after 4 seconds (4000ms)
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    if (!modalAlreadyOpened) {
+      modalAlreadyOpened = true;
+      openAssessmentModal();
+    }
+  }, 4000);
+});
+
+// Goal Slide Button Handler (Weight Loss vs Weight Gain)
+function setPopGoal(goal) {
+  selectedGoal = goal;
+  const toggleContainer = document.getElementById('goalToggleContainer');
+  const btnLoss = document.getElementById('btnGoalLoss');
+  const btnGain = document.getElementById('btnGoalGain');
+  const sliderLabel = document.getElementById('sliderLabelText');
+  const currentVal = document.getElementById('popWeightRange').value;
+
+  if (goal === 'Weight Gain') {
+    toggleContainer.classList.add('gain');
+    btnLoss.classList.remove('active');
+    btnGain.classList.add('active');
+    sliderLabel.textContent = 'Target To Gain:';
+    document.getElementById('sliderValDisplay').textContent = `+${currentVal} kg`;
+  } else {
+    toggleContainer.classList.remove('gain');
+    btnGain.classList.remove('active');
+    btnLoss.classList.add('active');
+    sliderLabel.textContent = 'Target To Lose:';
+    document.getElementById('sliderValDisplay').textContent = `-${currentVal} kg`;
+  }
+}
+
+function updateTargetSlider(val) {
+  const prefix = selectedGoal === 'Weight Gain' ? '+' : '-';
+  document.getElementById('sliderValDisplay').textContent = `${prefix}${val} kg`;
+}
+
+// Popup Form Submit -> Redirect to WhatsApp
+document.getElementById('popupAssessmentForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('pop-name').value.trim();
+  const phone = document.getElementById('pop-phone').value.trim();
+  const currentWt = document.getElementById('pop-current-wt').value.trim();
+  const age = document.getElementById('pop-age').value.trim();
+  const city = document.getElementById('pop-city').value.trim() || 'Not specified';
+  const targetKgs = document.getElementById('popWeightRange').value;
+
+  const waMsg = `*🎯 New Transformation Assessment Form*\n\n` +
+    `• *Selected Goal:* ${selectedGoal}\n` +
+    `• *Target Number:* ${selectedGoal === 'Weight Gain' ? '+' : '-'}${targetKgs} kg\n` +
+    `• *Name:* ${name}\n` +
+    `• *WhatsApp Phone:* ${phone}\n` +
+    `• *Current Weight:* ${currentWt} kg\n` +
+    `• *Age:* ${age} years\n` +
+    `• *Location:* ${city}\n\n` +
+    `Hello Coach Divyesh, I submitted the ${selectedGoal} assessment form on your website. Please evaluate my profile and suggest a customized diet and lifestyle plan!`;
+
+  closeAssessmentModal();
+  openCoachWA(waMsg);
+});
+
+// Contact Form Handler
+document.getElementById('consultationForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('c-name').value.trim();
+  const phone = document.getElementById('c-phone').value.trim();
+  const city = document.getElementById('c-city').value.trim() || 'Not specified';
+  const goal = document.getElementById('c-goal-sel').value;
+  const msg = document.getElementById('c-message').value.trim() || 'Ready to start';
+
+  const fullText = `*New Consultation Request — Coach Divyesh Website*\n\n` +
+    `• *Name:* ${name}\n` +
+    `• *Phone:* ${phone}\n` +
+    `• *Location:* ${city}\n` +
+    `• *Main Goal:* ${goal}\n` +
+    `• *Note:* ${msg}\n\n` +
+    `Hi Coach Divyesh, I would like to book a free 1:1 consultation call with you.`;
+
+  openCoachWA(fullText);
+});
 
 // 1. BMI CALCULATOR
 function calculateBMI() {
@@ -2938,26 +3537,6 @@ function calculateWHR() {
   `;
   res.classList.add('show');
 }
-
-// Contact Form Handler
-document.getElementById('consultationForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const name = document.getElementById('c-name').value.trim();
-  const phone = document.getElementById('c-phone').value.trim();
-  const city = document.getElementById('c-city').value.trim() || 'Not specified';
-  const goal = document.getElementById('c-goal-sel').value;
-  const msg = document.getElementById('c-message').value.trim() || 'Ready to start';
-
-  const fullText = `*New Consultation Request — Coach Divyesh Website*\n\n` +
-    `• *Name:* ${name}\n` +
-    `• *Phone:* ${phone}\n` +
-    `• *Location:* ${city}\n` +
-    `• *Main Goal:* ${goal}\n` +
-    `• *Note:* ${msg}\n\n` +
-    `Hi Coach Divyesh, I would like to book a free 1:1 consultation call with you.`;
-
-  openCoachWA(fullText);
-});
 
 // Scroll Reveal Intersection Observer
 const observer = new IntersectionObserver((entries) => {
