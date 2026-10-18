@@ -2,61 +2,65 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divyesh Thadeshwar | International Wellness Coach & Advisor</title>
-<meta name="description" content="Divyesh Thadeshwar — Certified International Wellness Advisor with 3.5+ years of experience. Sustainable weight management, real client reviews, BMI calculator and 1:1 personalized coaching.">
-<meta name="keywords" content="Divyesh Thadeshwar, Wellness Coach, International Wellness Advisor, Weight Loss Coach, Diet Plan, DP Vitazen, BMI Calculator, Health Coaching">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Coach Divyesh THADESHWAR | Wellness, Nutrition & Lifestyle Coach</title>
+<meta name="description" content="Coach Divyesh THADESHWAR — With over 4 years of experience, guiding thousands of families toward sustainable weight management, healthy nutrition, and lifelong wellness habits.">
+<meta name="keywords" content="Coach Divyesh THADESHWAR, Divyesh Thadeshwar, Wellness Coach, Weight Loss Coach, Healthy Nutrition, DP Vitazen, BMI Calculator, Lifestyle Coach">
 
 <!-- OpenGraph / Social Meta -->
-<meta property="og:title" content="Divyesh Thadeshwar | International Wellness Coach">
-<meta property="og:description" content="Transform your health, energy & lifestyle with 1:1 guidance from Divyesh Thadeshwar. 3.5+ years experience, 100+ proven client transformations.">
+<meta property="og:title" content="Coach Divyesh THADESHWAR | Wellness, Nutrition & Lifestyle Coach">
+<meta property="og:description" content="Over 4 years of experience guiding thousands of families toward better health, stronger mindset, and lasting lifestyle transformation.">
 <meta property="og:type" content="website">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 /* ==========================================================================
-   RESET & DESIGN SYSTEM TOKENS
+   RESET & SYSTEM VARIABLES
    ========================================================================== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --forest-900: #0B1C17;
-  --forest-800: #122C24;
-  --forest-700: #1B3C32;
-  --forest-600: #254F42;
-  --emerald: #10B981;
-  --emerald-light: #E6F8F1;
+  --forest-950: #081612;
+  --forest-900: #0C211B;
+  --forest-800: #13332A;
+  --forest-700: #1B4539;
+  --forest-600: #255849;
+  --emerald-500: #10B981;
+  --emerald-600: #059669;
+  --emerald-light: #E7F9F2;
   --gold: #DFA239;
-  --gold-dark: #B88022;
-  --gold-light: #FDF4DF;
+  --gold-hover: #ECC26C;
+  --gold-dark: #B57F22;
+  --gold-light: #FDF4E1;
   --clay: #E05F41;
-  --paper-bg: #FAF6EF;
+  --clay-hover: #CD4E31;
+  --paper: #FAF6EE;
   --paper-card: #FFFFFF;
-  --paper-tint: #F3ECE0;
-  --ink: #141F1A;
-  --ink-soft: #4F6157;
-  --ink-light: #7E9087;
-  --border: #E5DCCF;
-  --border-light: #EFE7DA;
-  --shadow-sm: 0 4px 16px rgba(11,28,23,0.06);
-  --shadow-md: 0 10px 30px rgba(11,28,23,0.09);
-  --shadow-lg: 0 20px 50px rgba(11,28,23,0.15);
-  --shadow-glow: 0 0 35px rgba(223,162,57,0.22);
+  --paper-soft: #F3ECE0;
+  --ink: #14201A;
+  --ink-soft: #4D6055;
+  --ink-light: #7A8E83;
+  --border: #E4DBD0;
+  --border-light: #EFE7DC;
+  --shadow-sm: 0 4px 14px rgba(12, 33, 27, 0.05);
+  --shadow-md: 0 10px 30px rgba(12, 33, 27, 0.09);
+  --shadow-lg: 0 20px 50px rgba(12, 33, 27, 0.16);
+  --shadow-glow: 0 0 35px rgba(223, 162, 57, 0.22);
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
   --radius-xl: 32px;
-  --ff-heading: 'Fraunces', Georgia, serif;
+  --ff-serif: 'Fraunces', Georgia, serif;
   --ff-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 }
 
 html { scroll-behavior: smooth; }
 body {
   font-family: var(--ff-sans);
-  background-color: var(--paper-bg);
+  background-color: var(--paper);
   color: var(--ink);
   line-height: 1.65;
   overflow-x: hidden;
@@ -68,9 +72,9 @@ a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font-family: inherit; }
 
 .container {
-  max-width: 1220px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
 }
 @media (min-width: 768px) {
   .container { padding: 0 2.2rem; }
@@ -80,31 +84,61 @@ section { padding: 5.5rem 0; position: relative; }
 @media (max-width: 768px) { section { padding: 3.8rem 0; } }
 
 /* ==========================================================================
-   TYPOGRAPHY & UTILITIES
+   TOP ANNOUNCEMENT BAR
+   ========================================================================== */
+.top-ticker {
+  background: linear-gradient(90deg, #091713, var(--forest-800), #091713);
+  color: #FFFFFF;
+  padding: 8px 1rem;
+  font-size: 0.78rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(223, 162, 57, 0.25);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.top-ticker span.badge-pill {
+  background: var(--gold);
+  color: var(--forest-950);
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .top-ticker span.desktop-only { display: none; }
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & DESIGN SYSTEM
    ========================================================================== */
 .eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold-dark);
   margin-bottom: 0.75rem;
 }
 .eyebrow::before {
   content: '';
-  width: 24px;
+  width: 22px;
   height: 2px;
   background: var(--gold);
   border-radius: 2px;
 }
-.eyebrow-light { color: var(--gold); }
-.eyebrow-light::before { background: var(--gold); }
+.eyebrow.light { color: var(--gold); }
+.eyebrow.light::before { background: var(--gold); }
 
 .section-head {
-  max-width: 680px;
+  max-width: 720px;
   margin-bottom: 3.2rem;
 }
 .section-head.center {
@@ -113,12 +147,12 @@ section { padding: 5.5rem 0; position: relative; }
   text-align: center;
 }
 .section-title {
-  font-family: var(--ff-heading);
-  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-family: var(--ff-serif);
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
   font-weight: 600;
-  color: var(--forest-900);
+  color: var(--forest-950);
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 .section-title em {
   font-style: italic;
@@ -131,7 +165,7 @@ section { padding: 5.5rem 0; position: relative; }
 .section-sub {
   color: var(--ink-soft);
   font-size: 1.05rem;
-  margin-top: 0.9rem;
+  margin-top: 0.85rem;
   line-height: 1.7;
 }
 .section-sub.light { color: rgba(255,255,255,0.8); }
@@ -158,43 +192,30 @@ section { padding: 5.5rem 0; position: relative; }
 }
 .btn:active { transform: translateY(0); }
 
-.btn-primary {
-  background: var(--clay);
-  color: #FFFFFF;
-}
-.btn-primary:hover {
-  background: #cc4f33;
-}
-.btn-wa {
-  background: #25D366;
-  color: #053316;
-  font-weight: 700;
-}
-.btn-wa:hover {
-  background: #20BA59;
-}
-.btn-gold {
-  background: var(--gold);
-  color: var(--forest-900);
-  font-weight: 700;
-}
-.btn-gold:hover {
-  background: #ecc26c;
-}
+.btn-primary { background: var(--clay); color: #FFFFFF; }
+.btn-primary:hover { background: var(--clay-hover); }
+
+.btn-wa { background: #25D366; color: #042E13; font-weight: 700; }
+.btn-wa:hover { background: #1FBA58; }
+
+.btn-gold { background: var(--gold); color: var(--forest-950); font-weight: 700; }
+.btn-gold:hover { background: var(--gold-hover); }
+
 .btn-ghost-light {
   background: rgba(255,255,255,0.08);
   border-color: rgba(255,255,255,0.3);
   color: #FFFFFF;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
 }
 .btn-ghost-light:hover {
   background: rgba(255,255,255,0.18);
   border-color: #FFFFFF;
 }
+
 .btn-outline-dark {
   background: transparent;
   border-color: var(--border);
-  color: var(--forest-900);
+  color: var(--forest-950);
 }
 .btn-outline-dark:hover {
   background: #FFFFFF;
@@ -205,7 +226,7 @@ section { padding: 5.5rem 0; position: relative; }
    NAVIGATION
    ========================================================================== */
 nav#siteNav {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -215,12 +236,14 @@ nav#siteNav {
   justify-content: space-between;
   padding: 0 2rem;
   height: 80px;
+  background: var(--forest-900);
   transition: all 0.35s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 nav#siteNav.scrolled {
-  background: rgba(11, 28, 23, 0.95);
+  background: rgba(8, 22, 18, 0.96);
   backdrop-filter: blur(16px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   height: 72px;
 }
 .nav-logo {
@@ -229,25 +252,25 @@ nav#siteNav.scrolled {
   line-height: 1.1;
   text-decoration: none;
 }
-.nav-logo-name {
-  font-family: var(--ff-heading);
+.nav-logo-brand {
+  font-family: var(--ff-serif);
   font-size: 1.35rem;
   font-weight: 700;
   color: #FFFFFF;
   letter-spacing: -0.01em;
 }
-.nav-logo-name span { color: var(--gold); }
-.nav-logo-tag {
+.nav-logo-brand span { color: var(--gold); }
+.nav-logo-sub {
   font-size: 0.62rem;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  font-weight: 600;
+  color: rgba(255,255,255,0.72);
+  font-weight: 700;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.8rem;
   list-style: none;
   align-items: center;
 }
@@ -287,10 +310,8 @@ nav#siteNav.scrolled {
   text-decoration: none;
   transition: all 0.2s;
 }
-.nav-cta:hover {
-  background: #cc4f33;
-  transform: translateY(-1px);
-}
+.nav-cta:hover { background: var(--clay-hover); transform: translateY(-1px); }
+
 .nav-ham {
   display: none;
   flex-direction: column;
@@ -312,13 +333,13 @@ nav#siteNav.scrolled {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(11, 28, 23, 0.98);
+  background: rgba(8, 22, 18, 0.98);
   backdrop-filter: blur(20px);
   z-index: 290;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.6rem;
   padding: 2rem;
   opacity: 0;
   pointer-events: none;
@@ -330,7 +351,7 @@ nav#siteNav.scrolled {
   pointer-events: auto;
 }
 .mobile-menu a {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-serif);
   font-size: 1.6rem;
   color: #FFFFFF;
   text-decoration: none;
@@ -338,39 +359,28 @@ nav#siteNav.scrolled {
 }
 .mobile-menu a:hover { color: var(--gold); }
 
-@media (max-width: 990px) {
+@media (max-width: 1024px) {
   .nav-links, .nav-cta.desktop-only { display: none; }
   .nav-ham { display: flex; }
-  nav#siteNav { padding: 0 1.25rem; }
+  nav#siteNav { padding: 0 1.2rem; }
 }
 
 /* ==========================================================================
    HERO SECTION
    ========================================================================== */
 #hero {
-  background: radial-gradient(110% 90% at 20% 0%, #1A3E33 0%, var(--forest-900) 65%);
+  background: radial-gradient(110% 90% at 20% 0%, #1A3E33 0%, var(--forest-950) 65%);
   color: #FFFFFF;
-  padding: 10rem 0 6rem;
+  padding: 6.5rem 0 5.5rem;
   overflow: hidden;
   position: relative;
-}
-#hero::before {
-  content: '';
-  position: absolute;
-  top: -100px;
-  right: -80px;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(223, 162, 57, 0.12) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
 }
 #hero::after {
   content: '';
   position: absolute;
   inset: 0;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-size: 30px 30px;
   opacity: 0.35;
   pointer-events: none;
 }
@@ -391,27 +401,27 @@ nav#siteNav.scrolled {
   }
 }
 
-.hero-badge-pill {
+.hero-pill-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 6px 16px;
+  padding: 6px 18px;
   background: rgba(223, 162, 57, 0.15);
-  border: 1px solid rgba(223, 162, 57, 0.35);
+  border: 1px solid rgba(223, 162, 57, 0.4);
   border-radius: 40px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.82rem;
+  font-weight: 700;
   color: var(--gold);
   margin-bottom: 1.3rem;
   backdrop-filter: blur(10px);
 }
 .hero-title {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-serif);
   font-size: clamp(2.3rem, 4.4vw, 3.8rem);
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.025em;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.3rem;
 }
 .hero-title em {
   font-style: italic;
@@ -419,8 +429,8 @@ nav#siteNav.scrolled {
   display: inline-block;
 }
 .hero-sub {
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.82);
+  font-size: 1.12rem;
+  color: rgba(255,255,255,0.85);
   line-height: 1.7;
   max-width: 52ch;
   margin-bottom: 2.2rem;
@@ -439,7 +449,7 @@ nav#siteNav.scrolled {
   .hero-actions { justify-content: center; }
 }
 
-.hero-trust-row {
+.hero-trust-metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
@@ -447,36 +457,36 @@ nav#siteNav.scrolled {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 @media (max-width: 560px) {
-  .hero-trust-row { grid-template-columns: 1fr; gap: 1rem; }
+  .hero-trust-metrics { grid-template-columns: 1fr; gap: 1rem; }
 }
-.hero-stat-item b {
+.hero-stat b {
   display: block;
-  font-family: var(--ff-heading);
-  font-size: 1.8rem;
+  font-family: var(--ff-serif);
+  font-size: 1.9rem;
   color: #FFFFFF;
   line-height: 1.1;
   margin-bottom: 0.2rem;
 }
-.hero-stat-item b span { color: var(--gold); }
-.hero-stat-item span {
+.hero-stat b span { color: var(--gold); }
+.hero-stat span.label {
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.68);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* Hero Portrait Showcase */
-.hero-portrait-wrapper {
+/* Hero Portrait */
+.hero-portrait-wrap {
   position: relative;
   max-width: 420px;
   margin: 0 auto;
 }
-.hero-portrait-card {
+.hero-portrait-frame {
   position: relative;
   border-radius: var(--radius-xl);
   padding: 10px;
-  background: linear-gradient(145deg, rgba(223, 162, 57, 0.4), rgba(255, 255, 255, 0.08));
+  background: linear-gradient(145deg, rgba(223, 162, 57, 0.45), rgba(255, 255, 255, 0.08));
   box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 .hero-portrait-img-box {
@@ -484,7 +494,7 @@ nav#siteNav.scrolled {
   border-radius: calc(var(--radius-xl) - 6px);
   overflow: hidden;
   aspect-ratio: 3/4;
-  background: var(--forest-800);
+  background: var(--forest-900);
 }
 .hero-portrait-img-box img {
   width: 100%;
@@ -493,14 +503,14 @@ nav#siteNav.scrolled {
   object-position: center 18%;
   transition: transform 0.6s ease;
 }
-.hero-portrait-card:hover .hero-portrait-img-box img {
+.hero-portrait-frame:hover .hero-portrait-img-box img {
   transform: scale(1.03);
 }
 
-.floating-badge {
+.hero-badge-float {
   position: absolute;
-  background: rgba(255, 255, 255, 0.95);
-  color: var(--forest-900);
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--forest-950);
   padding: 12px 18px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
@@ -514,24 +524,17 @@ nav#siteNav.scrolled {
   z-index: 5;
   animation: floatSlow 4s ease-in-out infinite alternate;
 }
-.floating-badge.badge-top {
-  top: 6%;
-  left: -8%;
-}
-.floating-badge.badge-bottom {
-  bottom: 6%;
-  right: -8%;
-  animation-delay: -2s;
-}
+.hero-badge-float.top { top: 6%; left: -8%; }
+.hero-badge-float.bottom { bottom: 6%; right: -8%; animation-delay: -2s; }
 @media (max-width: 580px) {
-  .floating-badge.badge-top { left: 2%; top: 4%; }
-  .floating-badge.badge-bottom { right: 2%; bottom: 4%; }
+  .hero-badge-float.top { left: 2%; top: 4%; }
+  .hero-badge-float.bottom { right: 2%; bottom: 4%; }
 }
-.badge-icon {
+.hero-badge-icon {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--forest-900);
+  background: var(--forest-950);
   color: var(--gold);
   display: flex;
   align-items: center;
@@ -539,7 +542,7 @@ nav#siteNav.scrolled {
   font-size: 1.1rem;
   flex-shrink: 0;
 }
-.badge-content div { font-size: 0.74rem; font-weight: 500; color: var(--ink-soft); }
+.hero-badge-info div { font-size: 0.74rem; font-weight: 500; color: var(--ink-soft); }
 
 @keyframes floatSlow {
   0% { transform: translateY(0px); }
@@ -547,52 +550,57 @@ nav#siteNav.scrolled {
 }
 
 /* ==========================================================================
-   COACH'S OWN TRANSFORMATION STORY (HIGH IMPACT)
+   FEATURED MANIFESTO / ABOUT COACH DIVYESH (USER EXACT TEXT)
    ========================================================================== */
-#story {
+#about-coach {
   background: #FFFFFF;
   border-bottom: 1px solid var(--border-light);
 }
-.story-box {
-  background: linear-gradient(135deg, #FAF7EE 0%, #F5EDE0 100%);
+.coach-manifesto-card {
+  background: linear-gradient(140deg, #FBF7EE 0%, #F5ECE0 100%);
   border-radius: var(--radius-xl);
   border: 1px solid var(--border);
-  padding: 3.5rem;
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 3.5rem;
-  align-items: center;
+  padding: 4rem 3.5rem;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-md);
 }
 @media (max-width: 960px) {
-  .story-box {
-    grid-template-columns: 1fr;
-    padding: 2.2rem;
-    gap: 2.5rem;
-  }
+  .coach-manifesto-card { padding: 2.5rem 1.8rem; }
 }
-.story-img-container {
+
+.coach-manifesto-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .coach-manifesto-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+.coach-profile-visual {
   position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.coach-visual-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  border: 3px solid #FFFFFF;
-  background: #000;
-  max-width: 440px;
-  margin: 0 auto;
+  border: 4px solid #FFFFFF;
+  background: var(--forest-900);
 }
-.story-img-container img {
+.coach-visual-card img {
   width: 100%;
   height: auto;
   display: block;
 }
-.story-tag {
+.coach-tag-pill {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: var(--forest-900);
+  background: var(--forest-950);
   color: var(--gold);
   padding: 6px 14px;
   border-radius: 30px;
@@ -601,160 +609,122 @@ nav#siteNav.scrolled {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.story-content h2 {
-  font-family: var(--ff-heading);
-  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
-  font-weight: 600;
-  color: var(--forest-900);
-  line-height: 1.25;
-  margin: 0.6rem 0 1.2rem;
+
+.coach-quote-box {
+  border-left: 4px solid var(--gold);
+  padding-left: 1.6rem;
+  margin: 1.4rem 0 1.6rem;
 }
-.story-content h2 em {
+.coach-quote-box p {
+  font-family: var(--ff-serif);
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: var(--forest-950);
   font-style: italic;
-  color: var(--clay);
+  font-weight: 500;
 }
-.story-content p {
+
+.manifesto-body-text {
+  font-size: 1.05rem;
   color: var(--ink-soft);
+  line-height: 1.8;
   margin-bottom: 1.2rem;
-  font-size: 1.02rem;
 }
-.story-highlights {
+.manifesto-body-text strong {
+  color: var(--forest-950);
+  font-weight: 700;
+}
+
+.coach-pillars-mini {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.2rem;
-  margin: 1.8rem 0 2rem;
+  margin: 2rem 0;
 }
-@media (max-width: 500px) {
-  .story-highlights { grid-template-columns: 1fr; }
+@media (max-width: 550px) {
+  .coach-pillars-mini { grid-template-columns: 1fr; }
 }
-.story-point {
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: var(--radius-sm);
-  padding: 1rem;
-  border-left: 4px solid var(--emerald);
+.mini-pillar-item {
+  background: #FFFFFF;
+  padding: 1.2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
 }
-.story-point strong {
-  display: block;
+.mini-pillar-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.mini-pillar-info h4 {
   font-size: 0.95rem;
-  color: var(--forest-900);
+  color: var(--forest-950);
   margin-bottom: 0.2rem;
 }
-.story-point span {
+.mini-pillar-info p {
   font-size: 0.82rem;
   color: var(--ink-soft);
+  line-height: 1.5;
 }
 
 /* ==========================================================================
-   ABOUT COACH DIVYESH & EXPERIENCE
+   COACH'S OWN TRANSFORMATION STORY ("WALKED THE TALK")
    ========================================================================== */
-#about {
-  background: var(--paper-bg);
+#story {
+  background: var(--paper);
 }
-.about-grid {
+.story-wrapper {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  padding: 3.5rem;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
   align-items: center;
+  box-shadow: var(--shadow-md);
 }
 @media (max-width: 960px) {
-  .about-grid { grid-template-columns: 1fr; }
+  .story-wrapper {
+    grid-template-columns: 1fr;
+    padding: 2.2rem;
+    gap: 2.5rem;
+  }
 }
-
-.about-photos-composite {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 1.2rem;
-  align-items: center;
-}
-.about-photo-item {
+.story-image-box {
+  position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: 4px solid #FFFFFF;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--paper-soft);
+  max-width: 440px;
+  margin: 0 auto;
 }
-.about-photo-item img {
+.story-image-box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about-photo-item.main {
-  aspect-ratio: 4/5;
-}
-.about-photo-item.secondary {
-  aspect-ratio: 3/4;
+  height: auto;
+  display: block;
 }
 
-.about-card-badge {
-  background: var(--forest-900);
-  color: #FFFFFF;
-  border-radius: var(--radius-md);
-  padding: 1.2rem 1.4rem;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+/* ==========================================================================
+   COACH IN ACTION GALLERY REEL
+   ========================================================================== */
+.coach-action-strip {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
 }
-.about-card-badge .icon {
-  font-size: 1.8rem;
-  color: var(--gold);
-}
-.about-card-badge h4 {
-  font-size: 0.95rem;
-  color: #FFFFFF;
-  margin-bottom: 0.2rem;
-}
-.about-card-badge p {
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.7);
-  margin: 0;
-}
-
-.about-text p {
-  color: var(--ink-soft);
-  margin-bottom: 1.2rem;
-  font-size: 1.02rem;
-}
-.about-credentials-list {
-  list-style: none;
-  margin: 1.6rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-.about-credentials-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  font-size: 0.96rem;
-  color: var(--ink);
-  font-weight: 500;
-}
-.about-credentials-list li::before {
-  content: '✓';
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--emerald-light);
-  color: var(--emerald);
-  font-weight: 800;
-  font-size: 0.8rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-/* Coach Photo Reel Strip */
-.coach-reel-grid {
+.coach-action-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.4rem;
 }
 @media (max-width: 768px) {
-  .coach-reel-grid { grid-template-columns: 1fr; }
+  .coach-action-grid { grid-template-columns: 1fr; }
 }
-.coach-reel-card {
+.coach-action-card {
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -762,34 +732,32 @@ nav#siteNav.scrolled {
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: var(--forest-900);
+  background: var(--forest-950);
 }
-.coach-reel-card:hover {
+.coach-action-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
 }
-.coach-reel-card img {
+.coach-action-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
   transition: transform 0.5s ease;
 }
-.coach-reel-card:hover img {
-  transform: scale(1.05);
+.coach-action-card:hover img {
+  transform: scale(1.04);
 }
-.coach-reel-cap {
+.coach-action-caption {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 14px 18px;
-  background: linear-gradient(to top, rgba(11,28,23,0.92) 0%, rgba(11,28,23,0.4) 70%, transparent 100%);
-  color: #fff;
-  font-size: 0.88rem;
-  font-weight: 600;
+  background: linear-gradient(to top, rgba(8,22,18,0.92) 0%, rgba(8,22,18,0.3) 70%, transparent 100%);
+  color: #FFFFFF;
 }
-.coach-reel-cap span {
+.coach-action-caption span {
   display: inline-block;
   background: rgba(223, 162, 57, 0.25);
   color: var(--gold);
@@ -803,79 +771,12 @@ nav#siteNav.scrolled {
 }
 
 /* ==========================================================================
-   PHILOSOPHY / 4 PILLARS
-   ========================================================================== */
-#pillars {
-  background: var(--paper-tint);
-  border-block: 1px solid var(--border);
-}
-.grid4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.4rem;
-}
-@media (max-width: 990px) { .grid4 { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 580px) { .grid4 { grid-template-columns: 1fr; } }
-
-.pillar-card {
-  background: #FFFFFF;
-  border-radius: var(--radius-md);
-  padding: 2rem 1.6rem;
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  display: flex;
-  flex-direction: column;
-}
-.pillar-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--gold);
-}
-.pillar-number {
-  font-family: var(--ff-heading);
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: var(--gold-dark);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.8rem;
-}
-.pillar-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: var(--forest-900);
-  color: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
-}
-.pillar-card h3 {
-  font-family: var(--ff-heading);
-  font-size: 1.22rem;
-  color: var(--forest-900);
-  margin-bottom: 0.6rem;
-  line-height: 1.3;
-}
-.pillar-card p {
-  color: var(--ink-soft);
-  font-size: 0.92rem;
-  line-height: 1.6;
-}
-
-/* ==========================================================================
-   REVIEWS & CLIENT TRANSFORMATIONS GALLERY (rev)
+   REVIEWS & CLIENT TRANSFORMATIONS GALLERY (rev folder)
    ========================================================================== */
 #reviews {
-  background: radial-gradient(120% 90% at 50% 0%, #15352C 0%, var(--forest-900) 100%);
+  background: radial-gradient(120% 90% at 50% 0%, #15352C 0%, var(--forest-950) 100%);
   color: #FFFFFF;
-  position: relative;
 }
-#reviews .eyebrow { color: var(--gold); }
-#reviews .eyebrow::before { background: var(--gold); }
-
 .reviews-filter-bar {
   display: flex;
   justify-content: center;
@@ -886,10 +787,10 @@ nav#siteNav.scrolled {
 .filter-btn {
   background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 8px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 9px 22px;
   border-radius: 50px;
-  font-size: 0.85rem;
+  font-size: 0.86rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -900,9 +801,10 @@ nav#siteNav.scrolled {
 }
 .filter-btn.active {
   background: var(--gold);
-  color: var(--forest-900);
+  color: var(--forest-950);
   border-color: var(--gold);
-  box-shadow: 0 4px 15px rgba(223, 162, 57, 0.4);
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(223, 162, 57, 0.4);
 }
 
 .transformations-grid {
@@ -951,7 +853,7 @@ nav#siteNav.scrolled {
 .review-overlay-hint {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(11,28,23,0.85) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(8,22,18,0.85) 0%, transparent 60%);
   display: flex;
   align-items: flex-end;
   padding: 1rem;
@@ -960,8 +862,8 @@ nav#siteNav.scrolled {
 }
 .review-card:hover .review-overlay-hint { opacity: 1; }
 .zoom-pill {
-  background: rgba(255,255,255,0.92);
-  color: var(--forest-900);
+  background: rgba(255,255,255,0.95);
+  color: var(--forest-950);
   font-size: 0.75rem;
   font-weight: 700;
   padding: 6px 12px;
@@ -972,7 +874,7 @@ nav#siteNav.scrolled {
 }
 
 .review-info {
-  padding: 1.1rem;
+  padding: 1.15rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -985,7 +887,7 @@ nav#siteNav.scrolled {
   color: var(--gold);
 }
 .review-title {
-  font-size: 0.96rem;
+  font-size: 0.98rem;
   font-weight: 600;
   color: #FFFFFF;
   line-height: 1.35;
@@ -1010,29 +912,6 @@ nav#siteNav.scrolled {
   font-weight: 600;
 }
 
-.reviews-cta-banner {
-  margin-top: 4rem;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(223, 162, 57, 0.3);
-  border-radius: var(--radius-lg);
-  padding: 2.2rem 2.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.8rem;
-}
-.reviews-cta-banner h3 {
-  font-family: var(--ff-heading);
-  font-size: 1.5rem;
-  color: #FFFFFF;
-  margin-bottom: 0.3rem;
-}
-.reviews-cta-banner p {
-  color: rgba(255,255,255,0.75);
-  font-size: 0.95rem;
-}
-
 /* ==========================================================================
    LIGHTBOX MODAL FOR REVIEWS
    ========================================================================== */
@@ -1040,19 +919,17 @@ nav#siteNav.scrolled {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(8, 18, 15, 0.96);
+  background: rgba(5, 15, 12, 0.96);
   backdrop-filter: blur(16px);
   z-index: 1000;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1.25rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.lightbox-modal.active {
-  display: flex;
-  opacity: 1;
-}
+.lightbox-modal.active { display: flex; opacity: 1; }
+
 .lightbox-container {
   position: relative;
   max-width: 950px;
@@ -1090,9 +967,7 @@ nav#siteNav.scrolled {
   border-radius: 8px;
   transition: background 0.2s;
 }
-.lightbox-close-btn:hover {
-  background: rgba(255,255,255,0.15);
-}
+.lightbox-close-btn:hover { background: rgba(255,255,255,0.15); }
 
 .lightbox-body {
   display: grid;
@@ -1123,7 +998,7 @@ nav#siteNav.scrolled {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(11,28,23,0.7);
+  background: rgba(8,22,18,0.7);
   border: 1px solid rgba(255,255,255,0.25);
   color: #FFFFFF;
   width: 44px;
@@ -1139,7 +1014,7 @@ nav#siteNav.scrolled {
 }
 .lightbox-nav-btn:hover {
   background: var(--gold);
-  color: var(--forest-900);
+  color: var(--forest-950);
 }
 .lightbox-nav-btn.prev { left: 16px; }
 .lightbox-nav-btn.next { right: 16px; }
@@ -1152,13 +1027,13 @@ nav#siteNav.scrolled {
   background: var(--forest-800);
 }
 .lightbox-sidebar-top h3 {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-serif);
   font-size: 1.4rem;
   color: #FFFFFF;
   margin-bottom: 0.8rem;
 }
 .lightbox-sidebar-top p {
-  color: rgba(255,255,255,0.78);
+  color: rgba(255,255,255,0.8);
   font-size: 0.94rem;
   line-height: 1.6;
   margin-bottom: 1.2rem;
@@ -1176,10 +1051,73 @@ nav#siteNav.scrolled {
 }
 
 /* ==========================================================================
-   SERVICES & SPECIALITIES
+   PHILOSOPHY & 4 PILLARS
+   ========================================================================== */
+#pillars {
+  background: var(--paper-soft);
+  border-block: 1px solid var(--border);
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+@media (max-width: 990px) { .grid4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 580px) { .grid4 { grid-template-columns: 1fr; } }
+
+.pillar-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 2.2rem 1.6rem;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+.pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+.pillar-number {
+  font-family: var(--ff-serif);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--gold-dark);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8rem;
+}
+.pillar-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--forest-900);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+.pillar-card h3 {
+  font-family: var(--ff-serif);
+  font-size: 1.25rem;
+  color: var(--forest-950);
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+.pillar-card p {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   SPECIALITIES & PROGRAMS
    ========================================================================== */
 #services {
-  background: var(--paper-bg);
+  background: var(--paper);
 }
 .services-grid {
   display: grid;
@@ -1193,7 +1131,7 @@ nav#siteNav.scrolled {
   background: #FFFFFF;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
-  padding: 2rem 1.6rem;
+  padding: 2.2rem 1.6rem;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
   position: relative;
@@ -1201,29 +1139,26 @@ nav#siteNav.scrolled {
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
-  border-color: var(--emerald);
+  border-color: var(--emerald-500);
 }
-.service-icon {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
+.service-icon { font-size: 2.2rem; margin-bottom: 1rem; }
 .service-card h3 {
-  font-family: var(--ff-heading);
-  font-size: 1.2rem;
-  color: var(--forest-900);
+  font-family: var(--ff-serif);
+  font-size: 1.22rem;
+  color: var(--forest-950);
   margin-bottom: 0.5rem;
 }
 .service-card p {
   color: var(--ink-soft);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   line-height: 1.6;
 }
 
 /* ==========================================================================
-   FREE HEALTH TOOLS / CALCULATORS
+   FREE HEALTH CALCULATOR SUITE
    ========================================================================== */
 #tools {
-  background: var(--forest-900);
+  background: var(--forest-950);
   color: #FFFFFF;
 }
 .tools-tabs-nav {
@@ -1244,13 +1179,10 @@ nav#siteNav.scrolled {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.tool-tab-btn:hover {
-  background: rgba(255,255,255,0.18);
-  color: #FFFFFF;
-}
+.tool-tab-btn:hover { background: rgba(255,255,255,0.18); color: #FFFFFF; }
 .tool-tab-btn.active {
   background: var(--gold);
-  color: var(--forest-900);
+  color: var(--forest-950);
   border-color: var(--gold);
   font-weight: 700;
   box-shadow: 0 4px 18px rgba(223, 162, 57, 0.35);
@@ -1273,8 +1205,8 @@ nav#siteNav.scrolled {
 }
 
 .tool-pane h3 {
-  font-family: var(--ff-heading);
-  color: var(--forest-900);
+  font-family: var(--ff-serif);
+  color: var(--forest-950);
   font-size: 1.6rem;
   margin-bottom: 0.4rem;
 }
@@ -1298,7 +1230,7 @@ nav#siteNav.scrolled {
 .input-group label {
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--forest-900);
+  color: var(--forest-950);
 }
 .input-group input,
 .input-group select,
@@ -1314,7 +1246,7 @@ nav#siteNav.scrolled {
 .input-group input:focus,
 .input-group select:focus,
 .input-group textarea:focus {
-  border-color: var(--emerald);
+  border-color: var(--emerald-500);
   outline: none;
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
 }
@@ -1322,7 +1254,7 @@ nav#siteNav.scrolled {
 .calculator-result-box {
   display: none;
   margin-top: 1.8rem;
-  background: var(--paper-bg);
+  background: var(--paper);
   border: 1px solid var(--border);
   border-left: 6px solid var(--gold);
   border-radius: var(--radius-md);
@@ -1330,17 +1262,14 @@ nav#siteNav.scrolled {
 }
 .calculator-result-box.show { display: block; }
 .calc-big-value {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-serif);
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--clay);
   line-height: 1.1;
   margin-bottom: 0.2rem;
 }
-.calc-result-list {
-  list-style: none;
-  margin-top: 1rem;
-}
+.calc-result-list { list-style: none; margin-top: 1rem; }
 .calc-result-list li {
   display: flex;
   justify-content: space-between;
@@ -1348,7 +1277,7 @@ nav#siteNav.scrolled {
   border-bottom: 1px dashed var(--border);
   font-size: 0.94rem;
 }
-.calc-result-list li b { color: var(--forest-900); }
+.calc-result-list li b { color: var(--forest-950); }
 
 .bmi-spectrum-bar {
   height: 14px;
@@ -1362,7 +1291,7 @@ nav#siteNav.scrolled {
   top: -6px;
   width: 6px;
   height: 26px;
-  background: var(--forest-900);
+  background: var(--forest-950);
   border: 1.5px solid #FFFFFF;
   border-radius: 3px;
   transform: translateX(-50%);
@@ -1386,7 +1315,7 @@ nav#siteNav.scrolled {
    FAQ SECTION
    ========================================================================== */
 #faq {
-  background: var(--paper-bg);
+  background: var(--paper);
   border-top: 1px solid var(--border);
 }
 .faq-accordion-list {
@@ -1401,9 +1330,7 @@ nav#siteNav.scrolled {
   overflow: hidden;
   transition: border-color 0.2s;
 }
-.faq-accordion-item.open {
-  border-color: var(--gold);
-}
+.faq-accordion-item.open { border-color: var(--gold); }
 .faq-trigger {
   width: 100%;
   background: none;
@@ -1416,7 +1343,7 @@ nav#siteNav.scrolled {
   gap: 1rem;
   font-weight: 700;
   font-size: 1.05rem;
-  color: var(--forest-900);
+  color: var(--forest-950);
   cursor: pointer;
 }
 .faq-icon-cross {
@@ -1425,9 +1352,7 @@ nav#siteNav.scrolled {
   transition: transform 0.25s ease;
   line-height: 1;
 }
-.faq-accordion-item.open .faq-icon-cross {
-  transform: rotate(45deg);
-}
+.faq-accordion-item.open .faq-icon-cross { transform: rotate(45deg); }
 .faq-content {
   max-height: 0;
   overflow: hidden;
@@ -1443,10 +1368,10 @@ nav#siteNav.scrolled {
 }
 
 /* ==========================================================================
-   CONTACT & CONSULTATION SECTION
+   CONTACT SECTION
    ========================================================================== */
 #contact {
-  background: linear-gradient(135deg, var(--forest-900) 0%, #16362B 100%);
+  background: linear-gradient(135deg, var(--forest-950) 0%, #16362B 100%);
   color: #FFFFFF;
 }
 .contact-layout {
@@ -1485,7 +1410,7 @@ nav#siteNav.scrolled {
   height: 44px;
   border-radius: 50%;
   background: var(--gold);
-  color: var(--forest-900);
+  color: var(--forest-950);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1515,9 +1440,9 @@ nav#siteNav.scrolled {
   .booking-form-card { padding: 1.8rem; }
 }
 .booking-form-card h3 {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-serif);
   font-size: 1.7rem;
-  color: var(--forest-900);
+  color: var(--forest-950);
   margin-bottom: 0.4rem;
 }
 .booking-form-card p {
@@ -1530,7 +1455,7 @@ nav#siteNav.scrolled {
    FOOTER
    ========================================================================== */
 footer {
-  background: #07130F;
+  background: #050E0B;
   color: rgba(255, 255, 255, 0.65);
   padding: 4.5rem 0 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1545,7 +1470,7 @@ footer {
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
 }
 .footer-brand-title {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-serif);
   font-size: 1.5rem;
   color: #FFFFFF;
   font-weight: 700;
@@ -1584,7 +1509,7 @@ footer {
 }
 
 /* ==========================================================================
-   FLOATING WHATSAPP BUTTON
+   FLOATING QUICK-CHAT ACTION
    ========================================================================== */
 .floating-whatsapp {
   position: fixed;
@@ -1629,7 +1554,7 @@ footer {
 /* Scroll Animation classes */
 .fade-up {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(24px);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .fade-up.in-view {
@@ -1641,41 +1566,50 @@ footer {
 <body>
 
 <!-- ==========================================================================
-     NAVBAR
+     TOP TICKER
+     ========================================================================== -->
+<div class="top-ticker">
+  <span class="badge-pill">4+ Years Experience</span>
+  <span>Transforming Lives, Building Healthier Families &amp; Sustainable Habits Across India &amp; Abroad.</span>
+  <span class="desktop-only">• Direct 1:1 WhatsApp Coaching Available</span>
+</div>
+
+<!-- ==========================================================================
+     STICKY HEADER
      ========================================================================== -->
 <nav id="siteNav">
-  <a href="#hero" class="nav-logo" aria-label="Divyesh Thadeshwar Home">
-    <div class="nav-logo-name">Divyesh <span>Thadeshwar</span></div>
-    <div class="nav-logo-tag">International Wellness Advisor</div>
+  <a href="#hero" class="nav-logo" aria-label="Coach Divyesh THADESHWAR Home">
+    <div class="nav-logo-brand">COACH DIVYESH <span>THADESHWAR</span></div>
+    <div class="nav-logo-sub">Wellness &bull; Nutrition &bull; Lifestyle</div>
   </a>
 
   <ul class="nav-links">
-    <li><a href="#story">Coach's Journey</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#reviews">Real Reviews</a></li>
+    <li><a href="#about-coach">About Coach</a></li>
+    <li><a href="#story">Transformation Story</a></li>
+    <li><a href="#reviews">Client Reviews</a></li>
     <li><a href="#pillars">Philosophy</a></li>
     <li><a href="#services">Specialities</a></li>
-    <li><a href="#tools">Free Health Tools</a></li>
+    <li><a href="#tools">Health Tools</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
 
   <div class="nav-actions">
-    <a href="#contact" class="nav-cta desktop-only">Book Free Call</a>
+    <a href="#contact" class="nav-cta desktop-only">Book Free Consultation</a>
     <button class="nav-ham" id="menuToggle" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<!-- Mobile Navigation Drawer -->
+<!-- Mobile Drawer -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#hero" onclick="closeMenu()">Home</a>
-  <a href="#story" onclick="closeMenu()">Coach's Journey</a>
-  <a href="#about" onclick="closeMenu()">About Divyesh</a>
-  <a href="#reviews" onclick="closeMenu()">Client Reviews</a>
-  <a href="#pillars" onclick="closeMenu()">Our Philosophy</a>
-  <a href="#services" onclick="closeMenu()">Specialities</a>
-  <a href="#tools" onclick="closeMenu()">Health Calculators</a>
+  <a href="#about-coach" onclick="closeMenu()">About Coach Divyesh</a>
+  <a href="#story" onclick="closeMenu()">Transformation Story</a>
+  <a href="#reviews" onclick="closeMenu()">Client Reviews &amp; Results</a>
+  <a href="#pillars" onclick="closeMenu()">4 Pillars of Wellness</a>
+  <a href="#services" onclick="closeMenu()">Programs &amp; Specialities</a>
+  <a href="#tools" onclick="closeMenu()">Free Health Tools</a>
   <a href="#faq" onclick="closeMenu()">FAQ</a>
   <a href="#contact" onclick="closeMenu()" class="btn btn-primary" style="margin-top:1rem;color:#fff!important;">Book Free Consultation</a>
 </div>
@@ -1686,60 +1620,60 @@ footer {
 <section id="hero">
   <div class="container hero-grid">
     <div>
-      <div class="hero-badge-pill">
-        <span>🌿</span> Certified International Wellness Advisor
+      <div class="hero-pill-badge">
+        <span>🌿</span> COACH DIVYESH THADESHWAR
       </div>
       <h1 class="hero-title">
-        Build a healthier, stronger <em>you</em> — for life.
+        Build a healthier body, stronger mindset &amp; <em>better quality of life.</em>
       </h1>
       <p class="hero-sub">
-        Hi, I'm <strong>Divyesh Thadeshwar</strong>. With 3.5+ years of international coaching experience, I help busy people achieve sustainable fat loss, boundless daily energy, and lifelong wellness without extreme diets.
+        Passionate about helping people live healthier and happier lives. With <strong>over 4 years of experience</strong> in the wellness industry, I have helped <strong>thousands of families</strong> take positive steps toward better health, weight management, and lifestyle transformation.
       </p>
 
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Book Free Consultation</a>
-        <a href="#reviews" class="btn btn-ghost-light">View 100+ Reviews</a>
-        <a href="#tools" class="btn btn-gold">Free BMI Calculator</a>
+        <a href="#reviews" class="btn btn-ghost-light">Explore 100+ Client Results</a>
+        <a href="#tools" class="btn btn-gold">Free Health Calculators</a>
       </div>
 
-      <div class="hero-trust-row">
-        <div class="hero-stat-item">
-          <b>3.5<span>+</span> Yrs</b>
-          <span>Wellness Experience</span>
+      <div class="hero-trust-metrics">
+        <div class="hero-stat">
+          <b>4<span>+</span> Years</b>
+          <span class="label">Wellness Experience</span>
         </div>
-        <div class="hero-stat-item">
-          <b>100<span>+</span></b>
-          <span>Real Client Results</span>
+        <div class="hero-stat">
+          <b>1,000<span>+</span></b>
+          <span class="label">Families Guided</span>
         </div>
-        <div class="hero-stat-item">
+        <div class="hero-stat">
           <b>1 : 1</b>
-          <span>WhatsApp Mentorship</span>
+          <span class="label">Personal Mentorship</span>
         </div>
       </div>
     </div>
 
     <!-- Coach Portrait -->
-    <div class="hero-portrait-wrapper">
-      <div class="hero-portrait-card">
+    <div class="hero-portrait-wrap">
+      <div class="hero-portrait-frame">
         <div class="hero-portrait-img-box">
-          <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.38%20PM.jpeg" alt="Divyesh Thadeshwar - International Wellness Advisor" width="420" height="560">
+          <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.38%20PM.jpeg" alt="Coach Divyesh THADESHWAR" width="420" height="560">
         </div>
       </div>
 
-      <!-- Floating Credibility Badges -->
-      <div class="floating-badge badge-top">
-        <div class="badge-icon">★</div>
-        <div class="badge-content">
+      <!-- Floating Badges -->
+      <div class="hero-badge-float top">
+        <div class="hero-badge-icon">★</div>
+        <div class="hero-badge-info">
           <strong>4.9 / 5 Rating</strong>
           <div>Trusted Wellness Mentor</div>
         </div>
       </div>
 
-      <div class="floating-badge badge-bottom">
-        <div class="badge-icon">🌿</div>
-        <div class="badge-content">
+      <div class="hero-badge-float bottom">
+        <div class="hero-badge-icon">🌿</div>
+        <div class="hero-badge-info">
           <strong>DP Vitazen Community</strong>
-          <div>Changing People's Lives</div>
+          <div>Transforming Lives</div>
         </div>
       </div>
     </div>
@@ -1747,131 +1681,157 @@ footer {
 </section>
 
 <!-- ==========================================================================
-     COACH'S OWN TRANSFORMATION STORY (HIGH CONVERTING PROOF)
+     ABOUT COACH DIVYESH (EXACT USER MANIFESTO)
+     ========================================================================== -->
+<section id="about-coach">
+  <div class="container">
+    <div class="coach-manifesto-card fade-up">
+      <div class="coach-manifesto-grid">
+        <div class="coach-profile-visual">
+          <div class="coach-visual-card">
+            <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.12.24%20PM.jpeg" alt="Coach Divyesh THADESHWAR smiling portrait" loading="lazy">
+          </div>
+          <div class="coach-tag-pill">Coach Profile</div>
+        </div>
+
+        <div>
+          <span class="eyebrow">Personal Message From Coach</span>
+          <h2 class="section-title">
+            "Together, let's transform lives, build healthier families &amp; <em>create a healthier future.</em>"
+          </h2>
+
+          <div class="coach-quote-box">
+            <p>
+              "I believe that true wellness is not just about losing weight; it is about building a healthier body, a stronger mindset, and a better quality of life."
+            </p>
+          </div>
+
+          <p class="manifesto-body-text">
+            <strong>Hello, I am Divyesh</strong>, passionate about helping people live healthier and happier lives.
+          </p>
+          <p class="manifesto-body-text">
+            With <strong>over 4 years of experience</strong> in the wellness industry, I have helped <strong>thousands of families</strong> take positive steps toward better health and lifestyle transformation.
+          </p>
+          <p class="manifesto-body-text">
+            My expertise focuses on <strong>weight management, healthy nutrition, lifestyle improvement, and sustainable wellness habits.</strong>
+          </p>
+          <p class="manifesto-body-text">
+            My mission is to guide individuals and families toward achieving their wellness goals through personalized guidance, consistent support, and healthy lifestyle practices.
+          </p>
+
+          <div class="coach-pillars-mini">
+            <div class="mini-pillar-item">
+              <div class="mini-pillar-icon">🥗</div>
+              <div class="mini-pillar-info">
+                <h4>Healthy Nutrition</h4>
+                <p>Personalized eating plans that fit your daily culture and family meals.</p>
+              </div>
+            </div>
+            <div class="mini-pillar-item">
+              <div class="mini-pillar-icon">⚖️</div>
+              <div class="mini-pillar-info">
+                <h4>Weight Management</h4>
+                <p>Sustainable fat loss and muscle toning without starvation diets.</p>
+              </div>
+            </div>
+            <div class="mini-pillar-item">
+              <div class="mini-pillar-icon">🧠</div>
+              <div class="mini-pillar-info">
+                <h4>Stronger Mindset</h4>
+                <p>Developing confidence, stress resilience, and self-discipline.</p>
+              </div>
+            </div>
+            <div class="mini-pillar-item">
+              <div class="mini-pillar-icon">💬</div>
+              <div class="mini-pillar-info">
+                <h4>Consistent Support</h4>
+                <p>Daily WhatsApp encouragement and accountability every step of the way.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;margin-top:1.5rem;">
+            <a href="#contact" class="btn btn-primary">Start With Coach Divyesh</a>
+            <a href="https://wa.me/918347402486?text=Hello%20Coach%20Divyesh%2C%20I%20would%20like%20to%20discuss%20a%20personalized%20wellness%20plan%20for%20myself%20and%20my%20family." target="_blank" rel="noopener" class="btn btn-wa">
+              Chat Directly on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coach Moments / Seminars Visual Reel -->
+      <div class="coach-action-strip fade-up">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.6rem;">
+          <div>
+            <span class="eyebrow" style="margin-bottom:0.2rem;">Moments &amp; Mentorship</span>
+            <h3 style="font-family:var(--ff-serif);font-size:1.6rem;color:var(--forest-950);">Coach Divyesh Across Sessions, Seminars &amp; Summits</h3>
+          </div>
+          <span style="font-size:0.86rem;color:var(--ink-soft);font-weight:600;">Active Presence &amp; Global Advisory</span>
+        </div>
+
+        <div class="coach-action-grid">
+          <div class="coach-action-card">
+            <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.12.25%20PM.jpeg" alt="Coach Divyesh at Wellness Conference" loading="lazy">
+            <div class="coach-action-caption"><span>Wellness Leadership</span></div>
+          </div>
+          <div class="coach-action-card">
+            <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.39%20PM.jpeg" alt="Coach Divyesh Lifestyle Coaching" loading="lazy">
+            <div class="coach-action-caption"><span>Lifestyle Mentorship</span></div>
+          </div>
+          <div class="coach-action-card">
+            <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.39%20PM%20(2).jpeg" alt="Coach Divyesh Consultations" loading="lazy">
+            <div class="coach-action-caption"><span>Client Consultations</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     COACH'S OWN TRANSFORMATION STORY
      ========================================================================== -->
 <section id="story">
   <div class="container">
-    <div class="story-box fade-up">
-      <div class="story-img-container">
-        <div class="story-tag">Coach's Real Story</div>
-        <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%201.40.18%20PM.jpeg" alt="Divyesh Thadeshwar Personal Transformation Before and After" loading="lazy">
+    <div class="story-wrapper fade-up">
+      <div class="story-image-box">
+        <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%201.40.18%20PM.jpeg" alt="Coach Divyesh Personal Transformation Story" loading="lazy">
       </div>
 
-      <div class="story-content">
-        <span class="eyebrow">Real Empathy • Walked The Talk</span>
-        <h2>I didn't just study wellness — <em>I lived it.</em></h2>
-        <p>
-          Before guiding hundreds of clients to their best shape, I faced the exact same challenges: stubborn weight, sluggish energy, busy days, and confusing diet advice that never lasted.
-        </p>
-        <p>
-          By creating a balanced, habit-driven nutrition routine and staying consistent, I reshaped my body and revitalized my health. That personal transformation inspired me to become an <strong>International Wellness Advisor</strong>.
-        </p>
-
-        <div class="story-highlights">
-          <div class="story-point">
-            <strong>No Starvation or Gimmicks</strong>
-            <span>Eat wholesome food you enjoy while losing fat.</span>
-          </div>
-          <div class="story-point">
-            <strong>Daily Accountability</strong>
-            <span>Direct WhatsApp support whenever you have doubts.</span>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
-          <a href="https://wa.me/918347402486?text=Hi%20Divyesh%2C%20I%20saw%20your%20personal%20transformation%20story%20and%20would%20love%20to%20start%20my%20own%20health%20journey." target="_blank" rel="noopener" class="btn btn-wa">
-            Chat with Coach Divyesh
-          </a>
-          <span style="font-size:0.88rem;color:var(--ink-soft);">Direct response on WhatsApp</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     ABOUT COACH DIVYESH
-     ========================================================================== -->
-<section id="about">
-  <div class="container about-grid">
-    <div class="about-photos-composite fade-up">
-      <div class="about-photo-item main">
-        <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.12.24%20PM.jpeg" alt="Divyesh Thadeshwar smiling portrait" loading="lazy">
-      </div>
-      <div style="display:flex;flex-direction:column;gap:1.2rem;">
-        <div class="about-photo-item secondary">
-          <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.12.25%20PM.jpeg" alt="Divyesh Thadeshwar at Wellness Conference" loading="lazy">
-        </div>
-        <div class="about-card-badge">
-          <div class="icon">🏆</div>
-          <div>
-            <h4>3.5+ Years Experience</h4>
-            <p>Guiding individuals across India & abroad.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-text fade-up">
-      <span class="eyebrow">About Your Advisor</span>
-      <h2 class="section-title">Practical, sustainable wellness built around <em>your life</em></h2>
-      <p class="section-sub">
-        Real health doesn’t happen in a weekend bootcamp or through crash dieting. It is created through sensible daily habits, personalized nutrition, and ongoing encouragement.
-      </p>
-      <p>
-        As an <strong>International Wellness Advisor</strong> with the <strong>DP Vitazen Community</strong>, I work closely with each individual to analyze their numbers, understand their work-life schedule, and build an enjoyable lifestyle program.
-      </p>
-
-      <ul class="about-credentials-list">
-        <li><strong>Personalized Meal & Nutrition Strategy:</strong> Tailored to your household food culture, vegetarian preferences, and routine.</li>
-        <li><strong>Body Composition & Metabolic Health:</strong> Tracking fat loss, muscle retention, energy levels, and vital signs.</li>
-        <li><strong>Continuous Daily Motivation:</strong> You are never alone — one-touch WhatsApp follow-ups keep you consistent.</li>
-        <li><strong>Global Online Coaching:</strong> Receive consultations and weekly progress reviews anywhere in the world.</li>
-      </ul>
-
-      <div style="display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:2rem;">
-        <a href="#contact" class="btn btn-primary">Book 1-on-1 Consultation</a>
-        <a href="tel:+918347402486" class="btn btn-outline-dark">Call +91 83474 02486</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Coach Photo Highlights Reel -->
-  <div class="container" style="margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--border);">
-    <div class="fade-up" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:1.6rem;">
       <div>
-        <span class="eyebrow" style="margin-bottom:0.25rem;">Moments &amp; Mentorship</span>
-        <h3 style="font-family:var(--ff-heading);font-size:1.6rem;color:var(--forest-900);">Coach Divyesh Across Seminars, Sessions &amp; Summits</h3>
-      </div>
-      <span style="font-size:0.86rem;color:var(--ink-soft);font-weight:600;">Active Presence &amp; Global Advisory</span>
-    </div>
-    <div class="coach-reel-grid fade-up">
-      <div class="coach-reel-card">
-        <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.39%20PM.jpeg" alt="Divyesh Thadeshwar Wellness Mentor" loading="lazy">
-        <div class="coach-reel-cap"><span>Lifestyle Mentorship</span></div>
-      </div>
-      <div class="coach-reel-card">
-        <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.39%20PM%20(2).jpeg" alt="Divyesh Thadeshwar International Advisor" loading="lazy">
-        <div class="coach-reel-cap"><span>Client Consultations</span></div>
-      </div>
-      <div class="coach-reel-card">
-        <img src="divyesh/WhatsApp%20Image%202026-10-18%20at%202.10.39%20PM%20(1).jpeg" alt="Divyesh Thadeshwar Wellness Coach" loading="lazy">
-        <div class="coach-reel-cap"><span>Nutrition Workshops</span></div>
+        <span class="eyebrow">Real Empathy • Walked The Talk</span>
+        <h2 class="section-title">Before guiding others, <em>I transformed myself.</em></h2>
+        <p class="section-sub" style="margin-bottom:1.4rem;">
+          I didn't start as a fitness model or with genetics on my side. I personally struggled with unwanted weight, low energy, and conflicting diet fads that never gave lasting results.
+        </p>
+        <p class="manifesto-body-text">
+          By rebuilding my relationship with food, establishing daily hydration protocols, and adopting sustainable habits, I completely transformed my physique and health.
+        </p>
+        <p class="manifesto-body-text">
+          That journey is why I understand what you are going through. I know the cravings, the busy family schedules, and the hesitation — and I know the exact roadmap to get you through it.
+        </p>
+
+        <div style="display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;margin-top:2rem;">
+          <a href="#reviews" class="btn btn-outline-dark">See Client Transformations</a>
+          <a href="https://wa.me/918347402486?text=Hi%20Coach%20Divyesh%2C%20I%20saw%20your%20personal%20transformation%20story%20and%20want%20to%20start%20my%20own%20journey." target="_blank" rel="noopener" class="btn btn-wa">
+            Ask Divyesh on WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ==========================================================================
-     REVIEWS & REAL CLIENT TRANSFORMATIONS (rev folder)
+     REVIEWS & CLIENT TRANSFORMATIONS (rev folder)
      ========================================================================== -->
 <section id="reviews">
   <div class="container">
     <div class="section-head center fade-up">
-      <span class="eyebrow">DP Vitazen Community Reviews</span>
+      <span class="eyebrow light">DP Vitazen Community Reviews</span>
       <h2 class="section-title light">Real People. Real Results. <em>Transformations.</em></h2>
       <p class="section-sub light">
-        Browse genuine before-and-after reviews and client transformations coached by Divyesh Thadeshwar. Tap any transformation to view full details.
+        Browse genuine before-and-after client reviews coached by Coach Divyesh THADESHWAR. Tap any transformation to view full details.
       </p>
     </div>
 
@@ -1886,16 +1846,16 @@ footer {
 
     <!-- Transformations Grid -->
     <div class="transformations-grid" id="transformationsContainer">
-      <!-- Cards dynamically rendered / fully populated below -->
+      <!-- Populated via JavaScript from rev/ files -->
     </div>
 
-    <!-- Reviews CTA Banner -->
-    <div class="reviews-cta-banner fade-up">
+    <!-- Bottom Banner -->
+    <div style="margin-top:4rem;background:rgba(255,255,255,0.06);border:1px solid rgba(223,162,57,0.3);border-radius:var(--radius-lg);padding:2.4rem 2.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.8rem;" class="fade-up">
       <div>
-        <h3>Ready to write your own transformation story?</h3>
-        <p>Get a customized nutrition and lifestyle plan designed specifically for your body and goals.</p>
+        <h3 style="font-family:var(--ff-serif);font-size:1.6rem;color:#FFFFFF;margin-bottom:0.3rem;">Ready to build your own success story?</h3>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;">Join thousands of families living healthier, happier, and more energetic lives.</p>
       </div>
-      <a href="https://wa.me/918347402486?text=Hello%20Divyesh%2C%20I%20saw%20the%20client%20reviews%20on%20your%20website.%20I%20would%20like%20to%20discuss%20my%20own%20wellness%20plan." target="_blank" rel="noopener" class="btn btn-wa">
+      <a href="https://wa.me/918347402486?text=Hello%20Coach%20Divyesh%2C%20I%20saw%20the%20client%20reviews%20on%20your%20website.%20I%20would%20like%20to%20discuss%20my%20own%20wellness%20plan." target="_blank" rel="noopener" class="btn btn-wa">
         Start Your Journey Today
       </a>
     </div>
@@ -1922,7 +1882,7 @@ footer {
           <div class="lightbox-meta-badge" id="lbBadge">Verified Transformation</div>
           <h3 id="lbSideTitle">DP Vitazen Client Review</h3>
           <p id="lbDesc">
-            Remarkable milestone achieved through balanced nutrition, hydration habits, and steady daily guidance from Divyesh Thadeshwar.
+            Remarkable milestone achieved through balanced nutrition, hydration habits, and steady daily guidance from Coach Divyesh THADESHWAR.
           </p>
           <div style="color:#FFB800;font-size:1.1rem;margin-bottom:1.2rem;">★★★★★</div>
           <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);line-height:1.5;">
@@ -1940,7 +1900,7 @@ footer {
 </div>
 
 <!-- ==========================================================================
-     PHILOSOPHY & 4 PILLARS
+     PHILOSOPHY / 4 PILLARS
      ========================================================================== -->
 <section id="pillars">
   <div class="container">
@@ -1948,7 +1908,7 @@ footer {
       <span class="eyebrow">Our Core Approach</span>
       <h2 class="section-title">Healthy living made <em>simple &amp; sustainable</em></h2>
       <p class="section-sub">
-        No crash diets or punishing gym sessions. We focus on four foundational pillars that create real, permanent health.
+        No crash diets or punishing regimens. We focus on four foundational pillars that create real, permanent health for you and your family.
       </p>
     </div>
 
@@ -1957,14 +1917,14 @@ footer {
         <div class="pillar-number">PILLAR 01</div>
         <div class="pillar-icon">🥗</div>
         <h3>Lifestyle &amp; Daily Food</h3>
-        <p>Daily routines drive long-term outcomes. We work with your traditional meals, timing, and simple kitchen swaps.</p>
+        <p>Daily routines drive long-term outcomes. We work with your traditional home meals, proper timing, and sensible kitchen swaps.</p>
       </div>
 
       <div class="pillar-card fade-up">
         <div class="pillar-number">PILLAR 02</div>
         <div class="pillar-icon">🎯</div>
         <h3>Personalised Roadmap</h3>
-        <p>Every body is unique. Your plan is calibrated precisely for your age, schedule, BMI, and metabolic goals.</p>
+        <p>Every individual is unique. Your program is calibrated precisely for your age, schedule, BMI, and family routine.</p>
       </div>
 
       <div class="pillar-card fade-up">
@@ -1978,63 +1938,63 @@ footer {
         <div class="pillar-number">PILLAR 04</div>
         <div class="pillar-icon">💬</div>
         <h3>Daily Mentorship</h3>
-        <p>Direct WhatsApp communication ensures you stay accountable, overcome social dining hurdles, and stay motivated.</p>
+        <p>Direct WhatsApp communication ensures you stay accountable, overcome social dining hurdles, and stay consistently motivated.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ==========================================================================
-     SPECIALITIES & GUIDANCE AREAS
+     SPECIALITIES & PROGRAMS
      ========================================================================== -->
 <section id="services">
   <div class="container">
     <div class="section-head center fade-up">
       <span class="eyebrow">Areas of Guidance</span>
       <h2 class="section-title">Comprehensive <em>Wellness Programs</em></h2>
-      <p class="section-sub">Personalized coaching tailored to your individual health journey.</p>
+      <p class="section-sub">Personalized coaching tailored to your individual and family health journey.</p>
     </div>
 
     <div class="services-grid">
       <div class="service-card fade-up">
         <div class="service-icon">⚖️</div>
-        <h3>Weight &amp; Fat Management</h3>
-        <p>Sustainable, lifestyle-first weight loss and fat reduction without starvation or extreme fatigue.</p>
+        <h3>Weight Management</h3>
+        <p>Sustainable fat loss and body reshaping without starvation, extreme fatigue, or rebound weight gain.</p>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">🥗</div>
-        <h3>Custom Nutrition Planning</h3>
-        <p>Nutrient-dense, delicious meal blueprints that fit your family schedule and taste preferences.</p>
-      </div>
-      <div class="service-card fade-up">
-        <div class="service-icon">💪</div>
-        <h3>Healthy Weight &amp; Muscle Gain</h3>
-        <p>Structured calorie-surplus nutrition to build lean mass, boost energy, and strengthen immunity.</p>
-      </div>
-      <div class="service-card fade-up">
-        <div class="service-icon">❤️</div>
-        <h3>Heart &amp; Vitality Support</h3>
-        <p>Cardiovascular wellness habits, stamina development, and cholesterol-conscious lifestyle guidance.</p>
-      </div>
-      <div class="service-card fade-up">
-        <div class="service-icon">🦴</div>
-        <h3>Bone &amp; Joint Health</h3>
-        <p>Calcium &amp; Vitamin D rich routines, mobility drills, and joint-friendly movement recommendations.</p>
-      </div>
-      <div class="service-card fade-up">
-        <div class="service-icon">🧠</div>
-        <h3>Sleep &amp; Stress Recovery</h3>
-        <p>Circadian rhythm optimization, stress management, and restorative night routines for mental clarity.</p>
-      </div>
-      <div class="service-card fade-up">
-        <div class="service-icon">✨</div>
-        <h3>Skin Glow &amp; Gut Health</h3>
-        <p>Hydration protocols, gut-friendly nutrition, and natural lifestyle adjustments for vibrant skin and energy.</p>
+        <h3>Healthy Nutrition</h3>
+        <p>Nutrient-dense, delicious meal blueprints that fit your family schedule, cultural food, and taste preferences.</p>
       </div>
       <div class="service-card fade-up">
         <div class="service-icon">👨‍👩‍👧</div>
-        <h3>Family &amp; Holistic Health</h3>
-        <p>Cultivating healthy eating traditions and balanced lifestyle habits for parents, kids, and elders alike.</p>
+        <h3>Family Health Transformation</h3>
+        <p>Cultivating healthy eating traditions and balanced lifestyle habits for parents, children, and elders alike.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">💪</div>
+        <h3>Muscle Tone &amp; Strength</h3>
+        <p>Calibrated protein and nutrient strategies to preserve lean muscle, improve posture, and elevate daily strength.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">❤️</div>
+        <h3>Vitality &amp; Metabolic Health</h3>
+        <p>Cardiovascular habits, stamina development, and balanced lifestyle habits for healthy blood pressure and metabolism.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🦴</div>
+        <h3>Bone &amp; Joint Mobility</h3>
+        <p>Calcium and micronutrient-dense guidance, joint-friendly daily movement, and flexibility habits.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🧠</div>
+        <h3>Mindset &amp; Sleep Recovery</h3>
+        <p>Restorative sleep hygiene, stress management drills, and emotional eating control for mental clarity.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">✨</div>
+        <h3>Gut Health &amp; Natural Glow</h3>
+        <p>Hydration protocols, gut-friendly fiber integration, and sustainable habits for skin vibrancy and clean digestion.</p>
       </div>
     </div>
   </div>
@@ -2046,10 +2006,10 @@ footer {
 <section id="tools">
   <div class="container">
     <div class="section-head center fade-up">
-      <span class="eyebrow">Free Health Calculators</span>
+      <span class="eyebrow light">Free Health Calculators</span>
       <h2 class="section-title light">Check your numbers <em>instantly</em></h2>
       <p class="section-sub light">
-        Calculate your body metrics below, then share them directly with Divyesh on WhatsApp for an expert assessment.
+        Calculate your body metrics below, then share them directly with Coach Divyesh on WhatsApp for an expert assessment.
       </p>
     </div>
 
@@ -2252,7 +2212,7 @@ footer {
           <span class="faq-icon-cross">+</span>
         </button>
         <div class="faq-content">
-          After an initial consultation to assess your health goals, lifestyle, and dietary habits, Divyesh designs a customized roadmap. You receive weekly meal strategies, daily WhatsApp check-ins, progress tracking, and constant adjustments.
+          After an initial consultation to assess your health goals, routine, and dietary habits, Coach Divyesh designs a personalized roadmap. You receive weekly meal blueprints, daily WhatsApp accountability, progress reviews, and steady motivation.
         </div>
       </div>
 
@@ -2262,27 +2222,27 @@ footer {
           <span class="faq-icon-cross">+</span>
         </button>
         <div class="faq-content">
-          Never. Extreme diets almost always lead to rebound weight gain and nutrient deficiency. Our plans focus on balanced portions of wholesome home-cooked food that leave you satiated, energized, and satisfied.
+          Never. Restrictive starvation diets always lead to burnout and rebound weight gain. Our programs focus on balanced portions of wholesome food that leave you nourished, energized, and satisfied.
         </div>
       </div>
 
       <div class="faq-accordion-item">
         <button class="faq-trigger" onclick="toggleFaqAccordion(this)">
-          Can I join if I am outside India or have irregular working hours?
+          Can I join if I am outside India or have busy irregular working hours?
           <span class="faq-icon-cross">+</span>
         </button>
         <div class="faq-content">
-          Yes! Divyesh is an International Wellness Advisor and coaches clients across different countries and time zones. All communication and reviews happen seamlessly via WhatsApp and voice calls.
+          Yes! Coach Divyesh coaches individuals and families across India and internationally. All communication, meal plans, and weekly check-ins happen seamlessly via WhatsApp and voice calls tailored to your time zone.
         </div>
       </div>
 
       <div class="faq-accordion-item">
         <button class="faq-trigger" onclick="toggleFaqAccordion(this)">
-          Are vegetarian and Jain dietary preferences supported?
+          Are vegetarian and family meal preferences supported?
           <span class="faq-icon-cross">+</span>
         </button>
         <div class="faq-content">
-          Absolutely. We specialize in vegetarian, Jain, and plant-forward nutrition profiles, ensuring adequate protein, iron, calcium, and micronutrient density from natural food sources.
+          Yes, absolutely. We specialize in vegetarian, Jain, and traditional home-cooking recipes, ensuring adequate protein, iron, calcium, and essential nutrition without requiring you to cook separate meals from your family.
         </div>
       </div>
 
@@ -2292,7 +2252,7 @@ footer {
           <span class="faq-icon-cross">+</span>
         </button>
         <div class="faq-content">
-          Most clients report improved digestion, better sleep, and heightened energy within the first 7 to 10 days. Visible inch loss and weight progress typically develop steadily over 3 to 8 weeks.
+          Most clients notice enhanced energy, reduced cravings, and lighter digestion within the first 7 to 10 days. Visible inch loss and weight progress typically develop steadily over 3 to 8 weeks.
         </div>
       </div>
     </div>
@@ -2305,10 +2265,10 @@ footer {
 <section id="contact">
   <div class="container contact-layout">
     <div class="fade-up">
-      <span class="eyebrow eyebrow-light">Get In Touch Directly</span>
+      <span class="eyebrow light">Get In Touch Directly</span>
       <h2 class="section-title light">Let’s begin your <em>transformation</em></h2>
       <p class="section-sub light" style="max-width:44ch;">
-        Reach out directly to Divyesh Thadeshwar to discuss your health goals, routine, and receive immediate recommendations.
+        Reach out directly to Coach Divyesh THADESHWAR to discuss your wellness goals and receive personalized recommendations.
       </p>
 
       <div class="contact-channels-card">
@@ -2328,20 +2288,20 @@ footer {
           </div>
         </a>
 
-        <a href="mailto:sonidivyesh4@gmail.com" class="contact-channel-item">
-          <div class="contact-channel-icon">✉️</div>
+        <div class="contact-channel-item">
+          <div class="contact-channel-icon">🌿</div>
           <div class="contact-channel-info">
-            <span>Email Enquiries</span>
-            <strong>sonidivyesh4@gmail.com</strong>
+            <span>Wellness Community</span>
+            <strong>DP Vitazen Community</strong>
           </div>
-        </a>
+        </div>
       </div>
     </div>
 
     <!-- Booking Form -->
     <div class="booking-form-card fade-up">
       <h3>Book Your Free Call</h3>
-      <p>Submit your details below — they will open directly in WhatsApp to start your personal assessment.</p>
+      <p>Submit your details below — they will open directly in WhatsApp to start your personal assessment with Coach Divyesh.</p>
 
       <form id="consultationForm">
         <div class="form-grid-fields">
@@ -2358,23 +2318,23 @@ footer {
         <div class="form-grid-fields">
           <div class="input-group">
             <label for="c-city">City / Location</label>
-            <input type="text" id="c-city" placeholder="e.g. Mumbai, Dubai, London">
+            <input type="text" id="c-city" placeholder="e.g. Ahmedabad, Mumbai, Dubai">
           </div>
           <div class="input-group">
             <label for="c-goal-sel">Primary Wellness Goal *</label>
             <select id="c-goal-sel" required>
-              <option value="Weight Loss & Fat Reduction">Weight Loss &amp; Fat Reduction</option>
-              <option value="Healthy Weight & Muscle Gain">Healthy Weight &amp; Muscle Gain</option>
+              <option value="Weight Management & Fat Loss">Weight Management &amp; Fat Loss</option>
+              <option value="Healthy Nutrition & Diet Plan">Healthy Nutrition &amp; Diet Plan</option>
+              <option value="Family Wellness Transformation">Family Wellness Transformation</option>
+              <option value="Sustainable Lifestyle Habits">Sustainable Lifestyle Habits</option>
+              <option value="Stamina, Strength & Muscle Tone">Stamina, Strength &amp; Muscle Tone</option>
               <option value="Postpartum / Women's Wellness">Postpartum / Women's Wellness</option>
-              <option value="Custom Meal & Nutrition Plan">Custom Meal &amp; Nutrition Plan</option>
-              <option value="General Stamina & Energy">General Stamina &amp; Energy</option>
-              <option value="Joint / Heart Health">Joint / Heart Health</option>
             </select>
           </div>
         </div>
 
         <div class="input-group" style="margin-bottom:1.4rem;">
-          <label for="c-message">Tell Divyesh about your current routine &amp; health history</label>
+          <label for="c-message">Tell Coach Divyesh about your current routine &amp; goals</label>
           <textarea id="c-message" rows="3" placeholder="Any specific challenges, food habits or targets..."></textarea>
         </div>
 
@@ -2393,9 +2353,9 @@ footer {
   <div class="container">
     <div class="footer-top">
       <div>
-        <div class="footer-brand-title">Divyesh <span>Thadeshwar</span></div>
+        <div class="footer-brand-title">COACH DIVYESH <span>THADESHWAR</span></div>
         <p class="footer-about-text">
-          Certified International Wellness Advisor with 3.5+ years of dedicated coaching experience helping clients cultivate vibrant, lifelong health with the DP Vitazen community.
+          With over 4 years of experience guiding thousands of families toward better health, stronger mindset, and lasting lifestyle transformation.
         </p>
       </div>
 
@@ -2403,10 +2363,10 @@ footer {
         <h4>Navigation</h4>
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#story">Coach's Journey</a></li>
-          <li><a href="#about">About Divyesh</a></li>
-          <li><a href="#reviews">Transformation Reviews</a></li>
-          <li><a href="#tools">Free Calculators</a></li>
+          <li><a href="#about-coach">About Coach Divyesh</a></li>
+          <li><a href="#story">Transformation Story</a></li>
+          <li><a href="#reviews">Client Reviews</a></li>
+          <li><a href="#tools">Free Health Tools</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -2416,14 +2376,13 @@ footer {
         <ul>
           <li><a href="https://wa.me/918347402486" target="_blank" rel="noopener">WhatsApp: +91 83474 02486</a></li>
           <li><a href="tel:+918347402486">Phone: +91 83474 02486</a></li>
-          <li><a href="mailto:sonidivyesh4@gmail.com">Email: sonidivyesh4@gmail.com</a></li>
           <li style="margin-top:0.8rem;color:rgba(255,255,255,0.5);font-size:0.85rem;">Global Online Coaching Available</li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <div>&copy; 2026 Divyesh Thadeshwar. All rights reserved. DP Vitazen Community.</div>
+      <div>&copy; 2026 Coach Divyesh THADESHWAR. All rights reserved. DP Vitazen Community.</div>
       <div>Health metrics are for educational guidance; not a substitute for clinical diagnostics.</div>
     </div>
   </div>
@@ -2432,7 +2391,7 @@ footer {
 <!-- ==========================================================================
      FLOATING WHATSAPP BUTTON
      ========================================================================== -->
-<a href="https://wa.me/918347402486?text=Hi%20Divyesh%2C%20I%20am%20visiting%20your%20website%20and%20would%20like%20to%20learn%20more%20about%20your%20wellness%20coaching." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat directly with Divyesh on WhatsApp">
+<a href="https://wa.me/918347402486?text=Hi%20Coach%20Divyesh%2C%20I%20am%20visiting%20your%20website%20and%20would%20like%20to%20learn%20more%20about%20your%20wellness%20coaching." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat directly with Coach Divyesh on WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.36 5.13L2 22l5.11-1.44a9.9 9.9 0 0 0 4.93 1.31h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm4.48 11.92c-.24-.12-1.45-.71-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21a7.3 7.3 0 0 1-1.35-1.68c-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.11-.22-.17-.46-.29z"/></svg>
   <span>Chat with Coach</span>
 </a>
@@ -2654,7 +2613,7 @@ function updateLightboxContent() {
   document.getElementById('lbBadge').textContent = item.tag;
   document.getElementById('lbDesc').textContent = item.desc;
   
-  const waMsg = `Hi Divyesh, I saw the client transformation "${item.title}" (${item.tag}) on your website. I want to achieve similar results for my body!`;
+  const waMsg = `Hi Coach Divyesh, I saw the client transformation "${item.title}" (${item.tag}) on your website. I want to achieve similar results for myself!`;
   document.getElementById('lbWaLink').href = `https://wa.me/${COACH_WA}?text=${encodeURIComponent(waMsg)}`;
 }
 
@@ -2746,13 +2705,12 @@ function calculateBMI() {
     advice = 'Personalized 1:1 guidance is strongly advised to reduce metabolic load, protect heart health, and safely lose fat.';
   }
 
-  // Pointer position: scale from BMI 10 to 40
   const pct = Math.min(Math.max(((bmi - 10) / (40 - 10)) * 100, 2), 98);
 
-  const waText = `Hello Divyesh, I calculated my BMI on your website:\n• Weight: ${w} kg\n• Height: ${h} cm\n• BMI: ${round1(bmi)} (${category})\nI would appreciate your personal guidance on a diet plan.`;
+  const waText = `Hello Coach Divyesh, I calculated my BMI on your website:\n• Weight: ${w} kg\n• Height: ${h} cm\n• BMI: ${round1(bmi)} (${category})\nI would appreciate your personal guidance on a diet plan.`;
 
   res.innerHTML = `
-    <div class="calc-big-value">${round1(bmi)} <span style="font-size:1.1rem;color:var(--forest-900);font-weight:600;">BMI (${category})</span></div>
+    <div class="calc-big-value">${round1(bmi)} <span style="font-size:1.1rem;color:var(--forest-950);font-weight:600;">BMI (${category})</span></div>
     <div class="bmi-spectrum-bar"><div class="bmi-pointer" style="left:${pct}%;"></div></div>
     <div class="bmi-legend">
       <span>&lt; 18.5 Underweight</span>
@@ -2763,7 +2721,7 @@ function calculateBMI() {
     <p style="margin-top:1rem;color:var(--ink);">${advice}</p>
     <div class="res-cta-wrapper">
       <button class="btn btn-wa" onclick="openCoachWA('${waText.replace(/'/g, "\\'")}')">
-        Share BMI with Divyesh on WhatsApp
+        Share BMI with Coach Divyesh on WhatsApp
       </button>
     </div>
   `;
@@ -2787,20 +2745,18 @@ function calculateCalories() {
     return;
   }
 
-  // Mifflin-St Jeor equation
   const bmr = 10 * w + 6.25 * h - 5 * a + (g === 'm' ? 5 : -161);
   const tdee = bmr * act;
   const target = Math.max(tdee + goalAdj, g === 'm' ? 1500 : 1200);
 
-  // Suggested macro balance: Protein 1.8g/kg, Fat 25% of calories, remaining carbs
   const proteinG = Math.round(1.8 * w);
   const fatG = Math.round((target * 0.25) / 9);
   const carbG = Math.round(Math.max((target - proteinG * 4 - fatG * 9) / 4, 30));
 
-  const waText = `Hello Divyesh, here is my Calorie Calculation:\n• Age: ${a}, ${g === 'm' ? 'Male' : 'Female'}\n• Weight: ${w} kg, Height: ${h} cm\n• Target Goal: ${goalName}\n• Daily Target: ${Math.round(target)} kcal/day\n• Macros: P ${proteinG}g / C ${carbG}g / F ${fatG}g\nPlease suggest a suitable meal plan.`;
+  const waText = `Hello Coach Divyesh, here is my Calorie Calculation:\n• Age: ${a}, ${g === 'm' ? 'Male' : 'Female'}\n• Weight: ${w} kg, Height: ${h} cm\n• Target Goal: ${goalName}\n• Daily Target: ${Math.round(target)} kcal/day\n• Macros: P ${proteinG}g / C ${carbG}g / F ${fatG}g\nPlease suggest a suitable meal plan.`;
 
   res.innerHTML = `
-    <div class="calc-big-value">${Math.round(target)} <span style="font-size:1.1rem;color:var(--forest-900);font-weight:600;">kcal / day</span></div>
+    <div class="calc-big-value">${Math.round(target)} <span style="font-size:1.1rem;color:var(--forest-950);font-weight:600;">kcal / day</span></div>
     <p style="color:var(--ink-soft);font-size:0.92rem;">Target calibrated for: <strong>${goalName}</strong></p>
     <ul class="calc-result-list">
       <li><span>Basal Metabolic Rate (BMR):</span> <b>${Math.round(bmr)} kcal</b></li>
@@ -2811,7 +2767,7 @@ function calculateCalories() {
     </ul>
     <div class="res-cta-wrapper">
       <button class="btn btn-wa" onclick="openCoachWA('${waText.replace(/'/g, "\\'")}')">
-        Discuss My Diet Plan on WhatsApp
+        Discuss My Nutrition on WhatsApp
       </button>
     </div>
   `;
@@ -2835,10 +2791,10 @@ function calculateWater() {
   const litres = round1(ml / 1000);
   const glasses = Math.round(ml / 250);
 
-  const waText = `Hello Divyesh, my daily water intake calculated is ${litres} Litres (~${glasses} glasses) for weight ${w} kg. Can you give me hydration and detox recommendations?`;
+  const waText = `Hello Coach Divyesh, my daily water intake calculated is ${litres} Litres (~${glasses} glasses) for weight ${w} kg. Can you give me hydration recommendations?`;
 
   res.innerHTML = `
-    <div class="calc-big-value">${litres} <span style="font-size:1.1rem;color:var(--forest-900);font-weight:600;">Litres / day</span></div>
+    <div class="calc-big-value">${litres} <span style="font-size:1.1rem;color:var(--forest-950);font-weight:600;">Litres / day</span></div>
     <p>That is approximately <strong>${glasses} standard glasses (250ml each)</strong> spread evenly throughout your day.</p>
     <ul class="calc-result-list">
       <li><span>Base Body Water Need:</span> <b>${round1((w * 35)/1000)} L</b></li>
@@ -2847,7 +2803,7 @@ function calculateWater() {
     </ul>
     <div class="res-cta-wrapper">
       <button class="btn btn-wa" onclick="openCoachWA('${waText.replace(/'/g, "\\'")}')">
-        Send Hydration Goal to Divyesh
+        Send Hydration Goal to Coach
       </button>
     </div>
   `;
@@ -2878,16 +2834,16 @@ function calculateIdealWeight() {
     if (currW > maxNormal) {
       statusMsg = `<li><span>Healthy Fat Loss to Reach Range:</span> <b style="color:var(--clay);">- ${round1(currW - maxNormal)} kg</b></li>`;
     } else if (currW < minNormal) {
-      statusMsg = `<li><span>Healthy Weight Gain to Reach Range:</span> <b style="color:var(--emerald);">+ ${round1(minNormal - currW)} kg</b></li>`;
+      statusMsg = `<li><span>Healthy Weight Gain to Reach Range:</span> <b style="color:var(--emerald-500);">+ ${round1(minNormal - currW)} kg</b></li>`;
     } else {
-      statusMsg = `<li><span>Status:</span> <b style="color:var(--emerald);">Within Healthy Normal Range</b></li>`;
+      statusMsg = `<li><span>Status:</span> <b style="color:var(--emerald-500);">Within Healthy Normal Range</b></li>`;
     }
   }
 
-  const waText = `Hello Divyesh, my healthy weight range for height ${h} cm is ${minNormal} – ${maxNormal} kg (Current: ${currW ? currW + ' kg' : 'Not specified'}). Please advise how I can reach my optimal weight.`;
+  const waText = `Hello Coach Divyesh, my healthy weight range for height ${h} cm is ${minNormal} – ${maxNormal} kg (Current: ${currW ? currW + ' kg' : 'Not specified'}). Please advise how I can reach my optimal weight.`;
 
   res.innerHTML = `
-    <div class="calc-big-value">${minNormal} – ${maxNormal} <span style="font-size:1.1rem;color:var(--forest-900);font-weight:600;">kg</span></div>
+    <div class="calc-big-value">${minNormal} – ${maxNormal} <span style="font-size:1.1rem;color:var(--forest-950);font-weight:600;">kg</span></div>
     <p>Normal WHO healthy weight bracket for height <strong>${h} cm</strong>.</p>
     <ul class="calc-result-list">
       <li><span>Devine Formula Estimate:</span> <b>${devine} kg</b></li>
@@ -2922,20 +2878,20 @@ function calculateHeartRate() {
   const cardio = `${calcBpm(0.7)} – ${calcBpm(0.8)}`;
   const peak = `${calcBpm(0.8)} – ${calcBpm(0.9)}`;
 
-  const waText = `Hello Divyesh, I calculated my target heart rate zones (Age ${age}):\n• Max HR: ${maxHR} bpm\n• Fat Burn Zone: ${fatBurn} bpm\nCan you suggest an optimal daily walking and workout routine?`;
+  const waText = `Hello Coach Divyesh, I calculated my target heart rate zones (Age ${age}):\n• Max HR: ${maxHR} bpm\n• Fat Burn Zone: ${fatBurn} bpm\nCan you suggest an optimal daily walking and routine?`;
 
   res.innerHTML = `
-    <div class="calc-big-value">${maxHR} <span style="font-size:1.1rem;color:var(--forest-900);font-weight:600;">bpm (Max HR)</span></div>
+    <div class="calc-big-value">${maxHR} <span style="font-size:1.1rem;color:var(--forest-950);font-weight:600;">bpm (Max HR)</span></div>
     <p>Estimated training heart-rate brackets for age <strong>${age}</strong>:</p>
     <ul class="calc-result-list">
       <li><span>Zone 1: Warm Up & Recovery (50–60%):</span> <b>${warmUp} bpm</b></li>
-      <li><span>Zone 2: Optimal Fat Oxidation (60–70%):</span> <b style="color:var(--emerald);">${fatBurn} bpm</b></li>
+      <li><span>Zone 2: Optimal Fat Oxidation (60–70%):</span> <b style="color:var(--emerald-500);">${fatBurn} bpm</b></li>
       <li><span>Zone 3: Aerobic Endurance (70–80%):</span> <b>${cardio} bpm</b></li>
       <li><span>Zone 4: Performance Cardio (80–90%):</span> <b>${peak} bpm</b></li>
     </ul>
     <div class="res-cta-wrapper">
       <button class="btn btn-wa" onclick="openCoachWA('${waText.replace(/'/g, "\\'")}')">
-        Send Workout Inquiry to Coach
+        Send Inquiry to Coach Divyesh
       </button>
     </div>
   `;
@@ -2960,16 +2916,16 @@ function calculateWHR() {
   let riskColor = '';
 
   if (g === 'm') {
-    if (ratio < 0.90) { riskLevel = 'Low Health Risk'; riskColor = 'var(--emerald)'; }
+    if (ratio < 0.90) { riskLevel = 'Low Health Risk'; riskColor = 'var(--emerald-500)'; }
     else if (ratio <= 0.99) { riskLevel = 'Moderate Health Risk'; riskColor = 'var(--gold-dark)'; }
     else { riskLevel = 'High Cardiovascular & Metabolic Risk'; riskColor = 'var(--clay)'; }
   } else {
-    if (ratio < 0.80) { riskLevel = 'Low Health Risk'; riskColor = 'var(--emerald)'; }
+    if (ratio < 0.80) { riskLevel = 'Low Health Risk'; riskColor = 'var(--emerald-500)'; }
     else if (ratio <= 0.85) { riskLevel = 'Moderate Health Risk'; riskColor = 'var(--gold-dark)'; }
     else { riskLevel = 'High Cardiovascular & Metabolic Risk'; riskColor = 'var(--clay)'; }
   }
 
-  const waText = `Hello Divyesh, my Waist-to-Hip Ratio is ${ratio} (${riskLevel}). Waist: ${w} cm, Hip: ${h} cm. Can you guide me on visceral fat reduction?`;
+  const waText = `Hello Coach Divyesh, my Waist-to-Hip Ratio is ${ratio} (${riskLevel}). Waist: ${w} cm, Hip: ${h} cm. Can you guide me on visceral fat reduction?`;
 
   res.innerHTML = `
     <div class="calc-big-value">${ratio} <span style="font-size:1.1rem;color:${riskColor};font-weight:700;">(${riskLevel})</span></div>
@@ -2992,13 +2948,13 @@ document.getElementById('consultationForm').addEventListener('submit', e => {
   const goal = document.getElementById('c-goal-sel').value;
   const msg = document.getElementById('c-message').value.trim() || 'Ready to start';
 
-  const fullText = `*New Consultation Request — Website*\n\n` +
+  const fullText = `*New Consultation Request — Coach Divyesh Website*\n\n` +
     `• *Name:* ${name}\n` +
     `• *Phone:* ${phone}\n` +
     `• *Location:* ${city}\n` +
     `• *Main Goal:* ${goal}\n` +
     `• *Note:* ${msg}\n\n` +
-    `Hi Divyesh, I would like to book a free 1:1 consultation call with you.`;
+    `Hi Coach Divyesh, I would like to book a free 1:1 consultation call with you.`;
 
   openCoachWA(fullText);
 });
